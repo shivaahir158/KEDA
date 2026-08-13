@@ -1,0 +1,971 @@
+[
+  {
+    "question_id": "uart_fixture::q::0001",
+    "question_text": "What ports does module uart_tx have?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "Module uart_tx has 7 ports: baud_tick, clk, rst_n, tx_busy, tx_data, tx_out, tx_valid",
+    "evidence_nodes": [
+      "uart_fixture::uart_tx",
+      "uart_fixture::uart_tx::clk",
+      "uart_fixture::uart_tx::rst_n",
+      "uart_fixture::uart_tx::baud_tick",
+      "uart_fixture::uart_tx::tx_data",
+      "uart_fixture::uart_tx::tx_valid",
+      "uart_fixture::uart_tx::tx_out",
+      "uart_fixture::uart_tx::tx_busy"
+    ],
+    "evidence_edges": [
+      [
+        "uart_fixture::uart_tx",
+        "has_port",
+        "uart_fixture::uart_tx::clk"
+      ],
+      [
+        "uart_fixture::uart_tx",
+        "has_port",
+        "uart_fixture::uart_tx::rst_n"
+      ],
+      [
+        "uart_fixture::uart_tx",
+        "has_port",
+        "uart_fixture::uart_tx::baud_tick"
+      ],
+      [
+        "uart_fixture::uart_tx",
+        "has_port",
+        "uart_fixture::uart_tx::tx_data"
+      ],
+      [
+        "uart_fixture::uart_tx",
+        "has_port",
+        "uart_fixture::uart_tx::tx_valid"
+      ],
+      [
+        "uart_fixture::uart_tx",
+        "has_port",
+        "uart_fixture::uart_tx::tx_out"
+      ],
+      [
+        "uart_fixture::uart_tx",
+        "has_port",
+        "uart_fixture::uart_tx::tx_busy"
+      ]
+    ],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0002",
+    "question_text": "What registers does module uart_tx contain?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "uart_tx contains 5 registers: bit_idx, shift_reg, state, tx_busy, tx_out",
+    "evidence_nodes": [
+      "uart_fixture::uart_tx",
+      "uart_fixture::uart_tx::reg::tx_busy",
+      "uart_fixture::uart_tx::reg::state",
+      "uart_fixture::uart_tx::reg::bit_idx",
+      "uart_fixture::uart_tx::reg::shift_reg",
+      "uart_fixture::uart_tx::reg::tx_out"
+    ],
+    "evidence_edges": [
+      [
+        "uart_fixture::uart_tx",
+        "contains_register",
+        "uart_fixture::uart_tx::reg::tx_busy"
+      ],
+      [
+        "uart_fixture::uart_tx",
+        "contains_register",
+        "uart_fixture::uart_tx::reg::state"
+      ],
+      [
+        "uart_fixture::uart_tx",
+        "contains_register",
+        "uart_fixture::uart_tx::reg::bit_idx"
+      ],
+      [
+        "uart_fixture::uart_tx",
+        "contains_register",
+        "uart_fixture::uart_tx::reg::shift_reg"
+      ],
+      [
+        "uart_fixture::uart_tx",
+        "contains_register",
+        "uart_fixture::uart_tx::reg::tx_out"
+      ]
+    ],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0003",
+    "question_text": "What parameters does module uart_tx have?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "uart_tx has parameters: DATA_BITS=8",
+    "evidence_nodes": [
+      "uart_fixture::uart_tx",
+      "uart_fixture::uart_tx::DATA_BITS"
+    ],
+    "evidence_edges": [
+      [
+        "uart_fixture::uart_tx",
+        "has_parameter",
+        "uart_fixture::uart_tx::DATA_BITS"
+      ]
+    ],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0004",
+    "question_text": "What ports does module uart_rx have?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "Module uart_rx has 6 ports: baud_tick, clk, rst_n, rx_data, rx_in, rx_valid",
+    "evidence_nodes": [
+      "uart_fixture::uart_rx",
+      "uart_fixture::uart_rx::clk",
+      "uart_fixture::uart_rx::rst_n",
+      "uart_fixture::uart_rx::baud_tick",
+      "uart_fixture::uart_rx::rx_in",
+      "uart_fixture::uart_rx::rx_data",
+      "uart_fixture::uart_rx::rx_valid"
+    ],
+    "evidence_edges": [
+      [
+        "uart_fixture::uart_rx",
+        "has_port",
+        "uart_fixture::uart_rx::clk"
+      ],
+      [
+        "uart_fixture::uart_rx",
+        "has_port",
+        "uart_fixture::uart_rx::rst_n"
+      ],
+      [
+        "uart_fixture::uart_rx",
+        "has_port",
+        "uart_fixture::uart_rx::baud_tick"
+      ],
+      [
+        "uart_fixture::uart_rx",
+        "has_port",
+        "uart_fixture::uart_rx::rx_in"
+      ],
+      [
+        "uart_fixture::uart_rx",
+        "has_port",
+        "uart_fixture::uart_rx::rx_data"
+      ],
+      [
+        "uart_fixture::uart_rx",
+        "has_port",
+        "uart_fixture::uart_rx::rx_valid"
+      ]
+    ],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0005",
+    "question_text": "What registers does module uart_rx contain?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "uart_rx contains 6 registers: bit_idx, rx_data, rx_valid, sample_cnt, shift_reg, state",
+    "evidence_nodes": [
+      "uart_fixture::uart_rx",
+      "uart_fixture::uart_rx::reg::rx_data",
+      "uart_fixture::uart_rx::reg::state",
+      "uart_fixture::uart_rx::reg::bit_idx",
+      "uart_fixture::uart_rx::reg::shift_reg",
+      "uart_fixture::uart_rx::reg::sample_cnt",
+      "uart_fixture::uart_rx::reg::rx_valid"
+    ],
+    "evidence_edges": [
+      [
+        "uart_fixture::uart_rx",
+        "contains_register",
+        "uart_fixture::uart_rx::reg::rx_data"
+      ],
+      [
+        "uart_fixture::uart_rx",
+        "contains_register",
+        "uart_fixture::uart_rx::reg::state"
+      ],
+      [
+        "uart_fixture::uart_rx",
+        "contains_register",
+        "uart_fixture::uart_rx::reg::bit_idx"
+      ],
+      [
+        "uart_fixture::uart_rx",
+        "contains_register",
+        "uart_fixture::uart_rx::reg::shift_reg"
+      ],
+      [
+        "uart_fixture::uart_rx",
+        "contains_register",
+        "uart_fixture::uart_rx::reg::sample_cnt"
+      ],
+      [
+        "uart_fixture::uart_rx",
+        "contains_register",
+        "uart_fixture::uart_rx::reg::rx_valid"
+      ]
+    ],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0006",
+    "question_text": "What parameters does module uart_rx have?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "uart_rx has parameters: DATA_BITS=8",
+    "evidence_nodes": [
+      "uart_fixture::uart_rx",
+      "uart_fixture::uart_rx::DATA_BITS"
+    ],
+    "evidence_edges": [
+      [
+        "uart_fixture::uart_rx",
+        "has_parameter",
+        "uart_fixture::uart_rx::DATA_BITS"
+      ]
+    ],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0007",
+    "question_text": "What ports does module uart_top have?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "Module uart_top has 10 ports: baud_div, clk, rst_n, rx_data, rx_in, rx_valid, tx_busy, tx_data, tx_out, tx_valid",
+    "evidence_nodes": [
+      "uart_fixture::uart_top",
+      "uart_fixture::uart_top::clk",
+      "uart_fixture::uart_top::rst_n",
+      "uart_fixture::uart_top::tx_data",
+      "uart_fixture::uart_top::tx_valid",
+      "uart_fixture::uart_top::tx_out",
+      "uart_fixture::uart_top::tx_busy",
+      "uart_fixture::uart_top::rx_in",
+      "uart_fixture::uart_top::rx_data",
+      "uart_fixture::uart_top::rx_valid",
+      "uart_fixture::uart_top::baud_div"
+    ],
+    "evidence_edges": [
+      [
+        "uart_fixture::uart_top",
+        "has_port",
+        "uart_fixture::uart_top::clk"
+      ],
+      [
+        "uart_fixture::uart_top",
+        "has_port",
+        "uart_fixture::uart_top::rst_n"
+      ],
+      [
+        "uart_fixture::uart_top",
+        "has_port",
+        "uart_fixture::uart_top::tx_data"
+      ],
+      [
+        "uart_fixture::uart_top",
+        "has_port",
+        "uart_fixture::uart_top::tx_valid"
+      ],
+      [
+        "uart_fixture::uart_top",
+        "has_port",
+        "uart_fixture::uart_top::tx_out"
+      ],
+      [
+        "uart_fixture::uart_top",
+        "has_port",
+        "uart_fixture::uart_top::tx_busy"
+      ],
+      [
+        "uart_fixture::uart_top",
+        "has_port",
+        "uart_fixture::uart_top::rx_in"
+      ],
+      [
+        "uart_fixture::uart_top",
+        "has_port",
+        "uart_fixture::uart_top::rx_data"
+      ],
+      [
+        "uart_fixture::uart_top",
+        "has_port",
+        "uart_fixture::uart_top::rx_valid"
+      ],
+      [
+        "uart_fixture::uart_top",
+        "has_port",
+        "uart_fixture::uart_top::baud_div"
+      ]
+    ],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0008",
+    "question_text": "What submodules does uart_top instantiate?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "uart_top instantiates: baud_gen, uart_rx, uart_tx",
+    "evidence_nodes": [
+      "uart_fixture::uart_top",
+      "uart_fixture::baud_gen",
+      "uart_fixture::uart_rx",
+      "uart_fixture::uart_tx"
+    ],
+    "evidence_edges": [
+      [
+        "uart_fixture::uart_top",
+        "instantiates",
+        "uart_fixture::baud_gen"
+      ],
+      [
+        "uart_fixture::uart_top",
+        "instantiates",
+        "uart_fixture::uart_rx"
+      ],
+      [
+        "uart_fixture::uart_top",
+        "instantiates",
+        "uart_fixture::uart_tx"
+      ]
+    ],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0009",
+    "question_text": "What parameters does module uart_top have?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "uart_top has parameters: BAUD_RATE=115200, CLK_FREQ=50000000, DATA_BITS=8",
+    "evidence_nodes": [
+      "uart_fixture::uart_top",
+      "uart_fixture::uart_top::BAUD_RATE",
+      "uart_fixture::uart_top::CLK_FREQ",
+      "uart_fixture::uart_top::DATA_BITS"
+    ],
+    "evidence_edges": [
+      [
+        "uart_fixture::uart_top",
+        "has_parameter",
+        "uart_fixture::uart_top::BAUD_RATE"
+      ],
+      [
+        "uart_fixture::uart_top",
+        "has_parameter",
+        "uart_fixture::uart_top::CLK_FREQ"
+      ],
+      [
+        "uart_fixture::uart_top",
+        "has_parameter",
+        "uart_fixture::uart_top::DATA_BITS"
+      ]
+    ],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0010",
+    "question_text": "What ports does module baud_gen have?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "Module baud_gen has 4 ports: baud_div, baud_tick, clk, rst_n",
+    "evidence_nodes": [
+      "uart_fixture::baud_gen",
+      "uart_fixture::baud_gen::clk",
+      "uart_fixture::baud_gen::rst_n",
+      "uart_fixture::baud_gen::baud_div",
+      "uart_fixture::baud_gen::baud_tick"
+    ],
+    "evidence_edges": [
+      [
+        "uart_fixture::baud_gen",
+        "has_port",
+        "uart_fixture::baud_gen::clk"
+      ],
+      [
+        "uart_fixture::baud_gen",
+        "has_port",
+        "uart_fixture::baud_gen::rst_n"
+      ],
+      [
+        "uart_fixture::baud_gen",
+        "has_port",
+        "uart_fixture::baud_gen::baud_div"
+      ],
+      [
+        "uart_fixture::baud_gen",
+        "has_port",
+        "uart_fixture::baud_gen::baud_tick"
+      ]
+    ],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0011",
+    "question_text": "What registers does module baud_gen contain?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "baud_gen contains 2 registers: baud_tick, counter",
+    "evidence_nodes": [
+      "uart_fixture::baud_gen",
+      "uart_fixture::baud_gen::reg::baud_tick",
+      "uart_fixture::baud_gen::reg::counter"
+    ],
+    "evidence_edges": [
+      [
+        "uart_fixture::baud_gen",
+        "contains_register",
+        "uart_fixture::baud_gen::reg::baud_tick"
+      ],
+      [
+        "uart_fixture::baud_gen",
+        "contains_register",
+        "uart_fixture::baud_gen::reg::counter"
+      ]
+    ],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0012",
+    "question_text": "What parameters does module baud_gen have?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "baud_gen has parameters: BAUD_RATE=115200, CLK_FREQ=50000000",
+    "evidence_nodes": [
+      "uart_fixture::baud_gen",
+      "uart_fixture::baud_gen::BAUD_RATE",
+      "uart_fixture::baud_gen::CLK_FREQ"
+    ],
+    "evidence_edges": [
+      [
+        "uart_fixture::baud_gen",
+        "has_parameter",
+        "uart_fixture::baud_gen::BAUD_RATE"
+      ],
+      [
+        "uart_fixture::baud_gen",
+        "has_parameter",
+        "uart_fixture::baud_gen::CLK_FREQ"
+      ]
+    ],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0013",
+    "question_text": "What clocks drive registers in module uart_tx?",
+    "category": "cross_artifact",
+    "difficulty": "medium",
+    "hops_required": 2,
+    "gold_answer": "Clocks driving registers in uart_tx: clk",
+    "evidence_nodes": [
+      "uart_fixture::uart_tx",
+      "uart_fixture::uart_tx::reg::state",
+      "uart_fixture::uart_tx::reg::tx_busy",
+      "uart_fixture::uart_tx::reg::tx_out",
+      "uart_fixture::uart_tx::reg::bit_idx",
+      "uart_fixture::clk::clk",
+      "uart_fixture::uart_tx::reg::shift_reg"
+    ],
+    "evidence_edges": [
+      [
+        "uart_fixture::uart_tx",
+        "contains_register",
+        "uart_fixture::uart_tx::reg::tx_busy"
+      ],
+      [
+        "uart_fixture::uart_tx::reg::tx_busy",
+        "clocked_by",
+        "uart_fixture::clk::clk"
+      ],
+      [
+        "uart_fixture::uart_tx",
+        "contains_register",
+        "uart_fixture::uart_tx::reg::state"
+      ],
+      [
+        "uart_fixture::uart_tx::reg::state",
+        "clocked_by",
+        "uart_fixture::clk::clk"
+      ],
+      [
+        "uart_fixture::uart_tx",
+        "contains_register",
+        "uart_fixture::uart_tx::reg::bit_idx"
+      ],
+      [
+        "uart_fixture::uart_tx::reg::bit_idx",
+        "clocked_by",
+        "uart_fixture::clk::clk"
+      ],
+      [
+        "uart_fixture::uart_tx",
+        "contains_register",
+        "uart_fixture::uart_tx::reg::shift_reg"
+      ],
+      [
+        "uart_fixture::uart_tx::reg::shift_reg",
+        "clocked_by",
+        "uart_fixture::clk::clk"
+      ],
+      [
+        "uart_fixture::uart_tx",
+        "contains_register",
+        "uart_fixture::uart_tx::reg::tx_out"
+      ],
+      [
+        "uart_fixture::uart_tx::reg::tx_out",
+        "clocked_by",
+        "uart_fixture::clk::clk"
+      ]
+    ],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0014",
+    "question_text": "What clocks drive registers in module baud_gen?",
+    "category": "cross_artifact",
+    "difficulty": "medium",
+    "hops_required": 2,
+    "gold_answer": "Clocks driving registers in baud_gen: clk",
+    "evidence_nodes": [
+      "uart_fixture::baud_gen",
+      "uart_fixture::clk::clk",
+      "uart_fixture::baud_gen::reg::baud_tick",
+      "uart_fixture::baud_gen::reg::counter"
+    ],
+    "evidence_edges": [
+      [
+        "uart_fixture::baud_gen",
+        "contains_register",
+        "uart_fixture::baud_gen::reg::baud_tick"
+      ],
+      [
+        "uart_fixture::baud_gen::reg::baud_tick",
+        "clocked_by",
+        "uart_fixture::clk::clk"
+      ],
+      [
+        "uart_fixture::baud_gen",
+        "contains_register",
+        "uart_fixture::baud_gen::reg::counter"
+      ],
+      [
+        "uart_fixture::baud_gen::reg::counter",
+        "clocked_by",
+        "uart_fixture::clk::clk"
+      ]
+    ],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0015",
+    "question_text": "What clocks drive registers in module uart_rx?",
+    "category": "cross_artifact",
+    "difficulty": "medium",
+    "hops_required": 2,
+    "gold_answer": "Clocks driving registers in uart_rx: clk",
+    "evidence_nodes": [
+      "uart_fixture::uart_rx",
+      "uart_fixture::uart_rx::reg::bit_idx",
+      "uart_fixture::uart_rx::reg::shift_reg",
+      "uart_fixture::uart_rx::reg::rx_valid",
+      "uart_fixture::uart_rx::reg::rx_data",
+      "uart_fixture::uart_rx::reg::sample_cnt",
+      "uart_fixture::clk::clk",
+      "uart_fixture::uart_rx::reg::state"
+    ],
+    "evidence_edges": [
+      [
+        "uart_fixture::uart_rx",
+        "contains_register",
+        "uart_fixture::uart_rx::reg::rx_data"
+      ],
+      [
+        "uart_fixture::uart_rx::reg::rx_data",
+        "clocked_by",
+        "uart_fixture::clk::clk"
+      ],
+      [
+        "uart_fixture::uart_rx",
+        "contains_register",
+        "uart_fixture::uart_rx::reg::state"
+      ],
+      [
+        "uart_fixture::uart_rx::reg::state",
+        "clocked_by",
+        "uart_fixture::clk::clk"
+      ],
+      [
+        "uart_fixture::uart_rx",
+        "contains_register",
+        "uart_fixture::uart_rx::reg::bit_idx"
+      ],
+      [
+        "uart_fixture::uart_rx::reg::bit_idx",
+        "clocked_by",
+        "uart_fixture::clk::clk"
+      ],
+      [
+        "uart_fixture::uart_rx",
+        "contains_register",
+        "uart_fixture::uart_rx::reg::shift_reg"
+      ],
+      [
+        "uart_fixture::uart_rx::reg::shift_reg",
+        "clocked_by",
+        "uart_fixture::clk::clk"
+      ],
+      [
+        "uart_fixture::uart_rx",
+        "contains_register",
+        "uart_fixture::uart_rx::reg::sample_cnt"
+      ],
+      [
+        "uart_fixture::uart_rx::reg::sample_cnt",
+        "clocked_by",
+        "uart_fixture::clk::clk"
+      ],
+      [
+        "uart_fixture::uart_rx",
+        "contains_register",
+        "uart_fixture::uart_rx::reg::rx_valid"
+      ],
+      [
+        "uart_fixture::uart_rx::reg::rx_valid",
+        "clocked_by",
+        "uart_fixture::clk::clk"
+      ]
+    ],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0016",
+    "question_text": "What is the impact of changing module uart_rx?",
+    "category": "what_if",
+    "difficulty": "hard",
+    "hops_required": 2,
+    "gold_answer": "Changing uart_rx could affect 34 artifacts: 1 Clocks, 3 Instances, 3 Modules, 11 Nets, 4 Parameters, 6 Ports, 6 Registers",
+    "evidence_nodes": [
+      "uart_fixture::uart_rx",
+      "uart_fixture::uart_top::rst_n",
+      "uart_fixture::uart_tx",
+      "uart_fixture::uart_rx::rx_in",
+      "uart_fixture::uart_rx::reg::rx_valid",
+      "uart_fixture::uart_top::tx_busy",
+      "uart_fixture::uart_top::CLK_FREQ",
+      "uart_fixture::uart_rx::rx_data",
+      "uart_fixture::uart_top::inst::u_uart_tx",
+      "uart_fixture::uart_rx::clk",
+      "uart_fixture::uart_rx::rx_valid",
+      "uart_fixture::uart_top::rx_valid",
+      "uart_fixture::uart_top::tx_data",
+      "uart_fixture::uart_rx::baud_tick",
+      "uart_fixture::uart_top::inst::u_uart_rx",
+      "uart_fixture::uart_top::baud_tick",
+      "uart_fixture::uart_rx::reg::shift_reg",
+      "uart_fixture::uart_rx::DATA_BITS",
+      "uart_fixture::uart_top::DATA_BITS",
+      "uart_fixture::uart_rx::reg::rx_data",
+      "uart_fixture::uart_rx::reg::sample_cnt",
+      "uart_fixture::uart_top::tx_valid",
+      "uart_fixture::uart_top::baud_div",
+      "uart_fixture::baud_gen",
+      "uart_fixture::uart_top::rx_in",
+      "uart_fixture::uart_top::inst::u_baud_gen",
+      "uart_fixture::uart_rx::reg::bit_idx",
+      "uart_fixture::uart_top::rx_data",
+      "uart_fixture::uart_top::tx_out",
+      "uart_fixture::uart_rx::rst_n",
+      "uart_fixture::uart_top",
+      "uart_fixture::uart_top::clk",
+      "uart_fixture::uart_top::BAUD_RATE",
+      "uart_fixture::clk::clk",
+      "uart_fixture::uart_rx::reg::state"
+    ],
+    "evidence_edges": [],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0017",
+    "question_text": "Why is module uart_rx risky to modify?",
+    "category": "what_if",
+    "difficulty": "hard",
+    "hops_required": 2,
+    "gold_answer": "uart_rx is risky because: instantiated by 1 parent modules (uart_top); has 6 connected ports",
+    "evidence_nodes": [
+      "uart_fixture::uart_rx",
+      "uart_fixture::uart_rx::reg::state",
+      "uart_fixture::uart_rx::reg::bit_idx",
+      "uart_fixture::uart_rx::reg::shift_reg",
+      "uart_fixture::uart_rx::rx_in",
+      "uart_fixture::uart_rx::clk",
+      "uart_fixture::uart_rx::DATA_BITS",
+      "uart_fixture::uart_rx::rst_n",
+      "uart_fixture::uart_rx::rx_valid",
+      "uart_fixture::uart_rx::reg::rx_valid",
+      "uart_fixture::uart_top",
+      "uart_fixture::uart_rx::reg::rx_data",
+      "uart_fixture::uart_rx::rx_data",
+      "uart_fixture::uart_rx::reg::sample_cnt",
+      "uart_fixture::uart_rx::baud_tick",
+      "uart_fixture::uart_top::inst::u_uart_rx"
+    ],
+    "evidence_edges": [],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0018",
+    "question_text": "What is the impact of changing module uart_top?",
+    "category": "what_if",
+    "difficulty": "hard",
+    "hops_required": 2,
+    "gold_answer": "Changing uart_top could affect 53 artifacts: 3 Instances, 3 Modules, 10 Nets, 7 Parameters, 17 Ports, 13 Registers",
+    "evidence_nodes": [
+      "uart_fixture::uart_top",
+      "uart_fixture::uart_top::rst_n",
+      "uart_fixture::uart_rx",
+      "uart_fixture::baud_gen::baud_tick",
+      "uart_fixture::uart_tx::reg::state",
+      "uart_fixture::uart_tx",
+      "uart_fixture::uart_rx::rx_in",
+      "uart_fixture::baud_gen::rst_n",
+      "uart_fixture::uart_rx::reg::rx_valid",
+      "uart_fixture::uart_tx::tx_valid",
+      "uart_fixture::uart_tx::tx_out",
+      "uart_fixture::uart_top::tx_busy",
+      "uart_fixture::uart_top::CLK_FREQ",
+      "uart_fixture::uart_rx::rx_data",
+      "uart_fixture::uart_tx::tx_busy",
+      "uart_fixture::uart_top::inst::u_uart_tx",
+      "uart_fixture::uart_rx::clk",
+      "uart_fixture::uart_rx::rx_valid",
+      "uart_fixture::uart_top::rx_valid",
+      "uart_fixture::uart_tx::reg::tx_out",
+      "uart_fixture::uart_top::tx_data",
+      "uart_fixture::uart_rx::baud_tick",
+      "uart_fixture::uart_tx::baud_tick",
+      "uart_fixture::uart_top::inst::u_uart_rx",
+      "uart_fixture::baud_gen::reg::counter",
+      "uart_fixture::uart_rx::reg::shift_reg",
+      "uart_fixture::uart_rx::DATA_BITS",
+      "uart_fixture::baud_gen::reg::baud_tick",
+      "uart_fixture::uart_top::DATA_BITS",
+      "uart_fixture::uart_rx::reg::rx_data",
+      "uart_fixture::uart_top::tx_valid",
+      "uart_fixture::uart_rx::reg::sample_cnt",
+      "uart_fixture::baud_gen::baud_div",
+      "uart_fixture::uart_top::baud_div",
+      "uart_fixture::baud_gen",
+      "uart_fixture::uart_top::inst::u_baud_gen",
+      "uart_fixture::uart_top::rx_in",
+      "uart_fixture::uart_tx::reg::bit_idx",
+      "uart_fixture::uart_tx::reg::shift_reg",
+      "uart_fixture::uart_rx::reg::bit_idx",
+      "uart_fixture::uart_tx::DATA_BITS",
+      "uart_fixture::baud_gen::CLK_FREQ",
+      "uart_fixture::uart_top::rx_data",
+      "uart_fixture::uart_top::tx_out",
+      "uart_fixture::uart_tx::reg::tx_busy",
+      "uart_fixture::baud_gen::clk",
+      "uart_fixture::uart_rx::rst_n",
+      "uart_fixture::uart_top::clk",
+      "uart_fixture::uart_tx::clk",
+      "uart_fixture::uart_top::BAUD_RATE",
+      "uart_fixture::uart_tx::tx_data",
+      "uart_fixture::uart_rx::reg::state",
+      "uart_fixture::uart_tx::rst_n",
+      "uart_fixture::baud_gen::BAUD_RATE"
+    ],
+    "evidence_edges": [],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0019",
+    "question_text": "Why is module uart_top risky to modify?",
+    "category": "what_if",
+    "difficulty": "hard",
+    "hops_required": 2,
+    "gold_answer": "uart_top is risky because: has 17 connected ports",
+    "evidence_nodes": [
+      "uart_fixture::uart_top",
+      "uart_fixture::uart_top::rst_n",
+      "uart_fixture::uart_rx",
+      "uart_fixture::uart_tx",
+      "uart_fixture::uart_top::tx_busy",
+      "uart_fixture::uart_top::CLK_FREQ",
+      "uart_fixture::uart_top::inst::u_uart_tx",
+      "uart_fixture::uart_top::rx_valid",
+      "uart_fixture::uart_top::tx_data",
+      "uart_fixture::uart_top::inst::u_uart_rx",
+      "uart_fixture::uart_top::DATA_BITS",
+      "uart_fixture::uart_top::tx_valid",
+      "uart_fixture::uart_top::baud_div",
+      "uart_fixture::baud_gen",
+      "uart_fixture::uart_top::inst::u_baud_gen",
+      "uart_fixture::uart_top::rx_in",
+      "uart_fixture::uart_top::rx_data",
+      "uart_fixture::uart_top::tx_out",
+      "uart_fixture::uart_top::clk",
+      "uart_fixture::uart_top::BAUD_RATE"
+    ],
+    "evidence_edges": [],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0020",
+    "question_text": "What is the impact of changing module uart_tx?",
+    "category": "what_if",
+    "difficulty": "hard",
+    "hops_required": 2,
+    "gold_answer": "Changing uart_tx could affect 34 artifacts: 1 Clocks, 3 Instances, 3 Modules, 11 Nets, 4 Parameters, 7 Ports, 5 Registers",
+    "evidence_nodes": [
+      "uart_fixture::uart_tx",
+      "uart_fixture::uart_top::rst_n",
+      "uart_fixture::uart_rx",
+      "uart_fixture::uart_tx::reg::state",
+      "uart_fixture::uart_tx::tx_out",
+      "uart_fixture::uart_tx::tx_valid",
+      "uart_fixture::uart_top::tx_busy",
+      "uart_fixture::uart_top::CLK_FREQ",
+      "uart_fixture::uart_tx::tx_busy",
+      "uart_fixture::uart_top::inst::u_uart_tx",
+      "uart_fixture::uart_top::rx_valid",
+      "uart_fixture::uart_tx::reg::tx_out",
+      "uart_fixture::uart_top::tx_data",
+      "uart_fixture::uart_tx::baud_tick",
+      "uart_fixture::uart_top::inst::u_uart_rx",
+      "uart_fixture::uart_top::baud_tick",
+      "uart_fixture::uart_top::DATA_BITS",
+      "uart_fixture::uart_top::tx_valid",
+      "uart_fixture::uart_tx::reg::bit_idx",
+      "uart_fixture::uart_top::baud_div",
+      "uart_fixture::uart_tx::reg::shift_reg",
+      "uart_fixture::baud_gen",
+      "uart_fixture::uart_top::rx_in",
+      "uart_fixture::uart_top::inst::u_baud_gen",
+      "uart_fixture::uart_tx::DATA_BITS",
+      "uart_fixture::uart_top::rx_data",
+      "uart_fixture::uart_tx::reg::tx_busy",
+      "uart_fixture::uart_top::tx_out",
+      "uart_fixture::uart_top",
+      "uart_fixture::uart_top::clk",
+      "uart_fixture::uart_tx::clk",
+      "uart_fixture::uart_top::BAUD_RATE",
+      "uart_fixture::uart_tx::tx_data",
+      "uart_fixture::clk::clk",
+      "uart_fixture::uart_tx::rst_n"
+    ],
+    "evidence_edges": [],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0021",
+    "question_text": "Why is module uart_tx risky to modify?",
+    "category": "what_if",
+    "difficulty": "hard",
+    "hops_required": 2,
+    "gold_answer": "uart_tx is risky because: instantiated by 1 parent modules (uart_top); has 7 connected ports",
+    "evidence_nodes": [
+      "uart_fixture::uart_tx",
+      "uart_fixture::uart_tx::DATA_BITS",
+      "uart_fixture::uart_tx::reg::state",
+      "uart_fixture::uart_tx::reg::tx_busy",
+      "uart_fixture::uart_tx::tx_out",
+      "uart_fixture::uart_tx::tx_valid",
+      "uart_fixture::uart_tx::clk",
+      "uart_fixture::uart_top",
+      "uart_fixture::uart_tx::reg::tx_out",
+      "uart_fixture::uart_top::inst::u_uart_tx",
+      "uart_fixture::uart_tx::tx_data",
+      "uart_fixture::uart_tx::tx_busy",
+      "uart_fixture::uart_tx::reg::bit_idx",
+      "uart_fixture::uart_tx::reg::shift_reg",
+      "uart_fixture::uart_tx::baud_tick",
+      "uart_fixture::uart_tx::rst_n"
+    ],
+    "evidence_edges": [],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0022",
+    "question_text": "What is the impact of changing module baud_gen?",
+    "category": "what_if",
+    "difficulty": "hard",
+    "hops_required": 2,
+    "gold_answer": "Changing baud_gen could affect 29 artifacts: 1 Clocks, 3 Instances, 3 Modules, 11 Nets, 5 Parameters, 4 Ports, 2 Registers",
+    "evidence_nodes": [
+      "uart_fixture::baud_gen",
+      "uart_fixture::uart_top::rst_n",
+      "uart_fixture::uart_rx",
+      "uart_fixture::baud_gen::baud_tick",
+      "uart_fixture::uart_top::inst::u_uart_rx",
+      "uart_fixture::uart_tx",
+      "uart_fixture::baud_gen::rst_n",
+      "uart_fixture::baud_gen::reg::baud_tick",
+      "uart_fixture::uart_top::tx_busy",
+      "uart_fixture::uart_top::DATA_BITS",
+      "uart_fixture::uart_top::CLK_FREQ",
+      "uart_fixture::uart_top::tx_valid",
+      "uart_fixture::baud_gen::baud_div",
+      "uart_fixture::uart_top::baud_div",
+      "uart_fixture::uart_top::inst::u_baud_gen",
+      "uart_fixture::uart_top::inst::u_uart_tx",
+      "uart_fixture::uart_top::rx_in",
+      "uart_fixture::baud_gen::CLK_FREQ",
+      "uart_fixture::uart_top::rx_data",
+      "uart_fixture::uart_top::tx_out",
+      "uart_fixture::baud_gen::clk",
+      "uart_fixture::uart_top::baud_tick",
+      "uart_fixture::uart_top",
+      "uart_fixture::uart_top::rx_valid",
+      "uart_fixture::uart_top::clk",
+      "uart_fixture::uart_top::BAUD_RATE",
+      "uart_fixture::uart_top::tx_data",
+      "uart_fixture::clk::clk",
+      "uart_fixture::baud_gen::reg::counter",
+      "uart_fixture::baud_gen::BAUD_RATE"
+    ],
+    "evidence_edges": [],
+    "design_name": "uart_fixture"
+  },
+  {
+    "question_id": "uart_fixture::q::0023",
+    "question_text": "Why is module baud_gen risky to modify?",
+    "category": "what_if",
+    "difficulty": "hard",
+    "hops_required": 2,
+    "gold_answer": "baud_gen is risky because: instantiated by 1 parent modules (uart_top)",
+    "evidence_nodes": [
+      "uart_fixture::baud_gen",
+      "uart_fixture::baud_gen::CLK_FREQ",
+      "uart_fixture::baud_gen::baud_tick",
+      "uart_fixture::baud_gen::clk",
+      "uart_fixture::baud_gen::rst_n",
+      "uart_fixture::baud_gen::reg::baud_tick",
+      "uart_fixture::uart_top",
+      "uart_fixture::baud_gen::baud_div",
+      "uart_fixture::uart_top::inst::u_baud_gen",
+      "uart_fixture::baud_gen::reg::counter",
+      "uart_fixture::baud_gen::BAUD_RATE"
+    ],
+    "evidence_edges": [],
+    "design_name": "uart_fixture"
+  }
+]

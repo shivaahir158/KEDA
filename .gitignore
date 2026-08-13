@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Cloned external design repos (re-clone with evaluate_designs.py)
+designs/picorv32/
+designs/verilog-uart/
+designs/verilog-axi/
+designs/mor1kx/
+designs/ibex/
+
+# Environment
+.env
+*.key
+
+# IDE
+.vscode/
+.idea/
+
+# Large generated changesets (regenerate with evaluate_designs.py)
+results/*_changeset.json

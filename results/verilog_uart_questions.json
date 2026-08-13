@@ -1,0 +1,1297 @@
+[
+  {
+    "question_id": "verilog_uart::q::0001",
+    "question_text": "What ports does module uart_rx have?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "Module uart_rx has 10 ports: busy, clk, frame_error, m_axis_tdata, m_axis_tready, m_axis_tvalid, overrun_error, prescale, rst, rxd",
+    "evidence_nodes": [
+      "verilog_uart::uart_rx",
+      "verilog_uart::uart_rx::clk",
+      "verilog_uart::uart_rx::rst",
+      "verilog_uart::uart_rx::m_axis_tdata",
+      "verilog_uart::uart_rx::m_axis_tvalid",
+      "verilog_uart::uart_rx::m_axis_tready",
+      "verilog_uart::uart_rx::rxd",
+      "verilog_uart::uart_rx::busy",
+      "verilog_uart::uart_rx::overrun_error",
+      "verilog_uart::uart_rx::frame_error",
+      "verilog_uart::uart_rx::prescale"
+    ],
+    "evidence_edges": [
+      [
+        "verilog_uart::uart_rx",
+        "has_port",
+        "verilog_uart::uart_rx::clk"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "has_port",
+        "verilog_uart::uart_rx::rst"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "has_port",
+        "verilog_uart::uart_rx::m_axis_tdata"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "has_port",
+        "verilog_uart::uart_rx::m_axis_tvalid"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "has_port",
+        "verilog_uart::uart_rx::m_axis_tready"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "has_port",
+        "verilog_uart::uart_rx::rxd"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "has_port",
+        "verilog_uart::uart_rx::busy"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "has_port",
+        "verilog_uart::uart_rx::overrun_error"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "has_port",
+        "verilog_uart::uart_rx::frame_error"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "has_port",
+        "verilog_uart::uart_rx::prescale"
+      ]
+    ],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0002",
+    "question_text": "What registers does module uart_rx contain?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "uart_rx contains 9 registers: bit_cnt, busy_reg, data_reg, frame_error_reg, m_axis_tdata_reg, m_axis_tvalid_reg, overrun_error_reg, prescale_reg, rxd_reg",
+    "evidence_nodes": [
+      "verilog_uart::uart_rx",
+      "verilog_uart::uart_rx::reg::rxd_reg",
+      "verilog_uart::uart_rx::reg::busy_reg",
+      "verilog_uart::uart_rx::reg::bit_cnt",
+      "verilog_uart::uart_rx::reg::overrun_error_reg",
+      "verilog_uart::uart_rx::reg::frame_error_reg",
+      "verilog_uart::uart_rx::reg::prescale_reg",
+      "verilog_uart::uart_rx::reg::data_reg",
+      "verilog_uart::uart_rx::reg::m_axis_tvalid_reg",
+      "verilog_uart::uart_rx::reg::m_axis_tdata_reg"
+    ],
+    "evidence_edges": [
+      [
+        "verilog_uart::uart_rx",
+        "contains_register",
+        "verilog_uart::uart_rx::reg::rxd_reg"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "contains_register",
+        "verilog_uart::uart_rx::reg::busy_reg"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "contains_register",
+        "verilog_uart::uart_rx::reg::bit_cnt"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "contains_register",
+        "verilog_uart::uart_rx::reg::overrun_error_reg"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "contains_register",
+        "verilog_uart::uart_rx::reg::frame_error_reg"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "contains_register",
+        "verilog_uart::uart_rx::reg::prescale_reg"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "contains_register",
+        "verilog_uart::uart_rx::reg::data_reg"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "contains_register",
+        "verilog_uart::uart_rx::reg::m_axis_tvalid_reg"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "contains_register",
+        "verilog_uart::uart_rx::reg::m_axis_tdata_reg"
+      ]
+    ],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0003",
+    "question_text": "What parameters does module uart_rx have?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "uart_rx has parameters: DATA_WIDTH=8",
+    "evidence_nodes": [
+      "verilog_uart::uart_rx",
+      "verilog_uart::uart_rx::DATA_WIDTH"
+    ],
+    "evidence_edges": [
+      [
+        "verilog_uart::uart_rx",
+        "has_parameter",
+        "verilog_uart::uart_rx::DATA_WIDTH"
+      ]
+    ],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0004",
+    "question_text": "What ports does module uart have?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "Module uart has 15 ports: clk, m_axis_tdata, m_axis_tready, m_axis_tvalid, prescale, rst, rx_busy, rx_frame_error, rx_overrun_error, rxd, s_axis_tdata, s_axis_tready, s_axis_tvalid, tx_busy, txd",
+    "evidence_nodes": [
+      "verilog_uart::uart",
+      "verilog_uart::uart::clk",
+      "verilog_uart::uart::rst",
+      "verilog_uart::uart::s_axis_tdata",
+      "verilog_uart::uart::s_axis_tvalid",
+      "verilog_uart::uart::s_axis_tready",
+      "verilog_uart::uart::m_axis_tdata",
+      "verilog_uart::uart::m_axis_tvalid",
+      "verilog_uart::uart::m_axis_tready",
+      "verilog_uart::uart::rxd",
+      "verilog_uart::uart::txd",
+      "verilog_uart::uart::tx_busy",
+      "verilog_uart::uart::rx_busy",
+      "verilog_uart::uart::rx_overrun_error",
+      "verilog_uart::uart::rx_frame_error",
+      "verilog_uart::uart::prescale"
+    ],
+    "evidence_edges": [
+      [
+        "verilog_uart::uart",
+        "has_port",
+        "verilog_uart::uart::clk"
+      ],
+      [
+        "verilog_uart::uart",
+        "has_port",
+        "verilog_uart::uart::rst"
+      ],
+      [
+        "verilog_uart::uart",
+        "has_port",
+        "verilog_uart::uart::s_axis_tdata"
+      ],
+      [
+        "verilog_uart::uart",
+        "has_port",
+        "verilog_uart::uart::s_axis_tvalid"
+      ],
+      [
+        "verilog_uart::uart",
+        "has_port",
+        "verilog_uart::uart::s_axis_tready"
+      ],
+      [
+        "verilog_uart::uart",
+        "has_port",
+        "verilog_uart::uart::m_axis_tdata"
+      ],
+      [
+        "verilog_uart::uart",
+        "has_port",
+        "verilog_uart::uart::m_axis_tvalid"
+      ],
+      [
+        "verilog_uart::uart",
+        "has_port",
+        "verilog_uart::uart::m_axis_tready"
+      ],
+      [
+        "verilog_uart::uart",
+        "has_port",
+        "verilog_uart::uart::rxd"
+      ],
+      [
+        "verilog_uart::uart",
+        "has_port",
+        "verilog_uart::uart::txd"
+      ],
+      [
+        "verilog_uart::uart",
+        "has_port",
+        "verilog_uart::uart::tx_busy"
+      ],
+      [
+        "verilog_uart::uart",
+        "has_port",
+        "verilog_uart::uart::rx_busy"
+      ],
+      [
+        "verilog_uart::uart",
+        "has_port",
+        "verilog_uart::uart::rx_overrun_error"
+      ],
+      [
+        "verilog_uart::uart",
+        "has_port",
+        "verilog_uart::uart::rx_frame_error"
+      ],
+      [
+        "verilog_uart::uart",
+        "has_port",
+        "verilog_uart::uart::prescale"
+      ]
+    ],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0005",
+    "question_text": "What submodules does uart instantiate?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "uart instantiates: uart_rx, uart_tx",
+    "evidence_nodes": [
+      "verilog_uart::uart",
+      "verilog_uart::uart_rx",
+      "verilog_uart::uart_tx"
+    ],
+    "evidence_edges": [
+      [
+        "verilog_uart::uart",
+        "instantiates",
+        "verilog_uart::uart_rx"
+      ],
+      [
+        "verilog_uart::uart",
+        "instantiates",
+        "verilog_uart::uart_tx"
+      ]
+    ],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0006",
+    "question_text": "What parameters does module uart have?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "uart has parameters: DATA_WIDTH=8",
+    "evidence_nodes": [
+      "verilog_uart::uart",
+      "verilog_uart::uart::DATA_WIDTH"
+    ],
+    "evidence_edges": [
+      [
+        "verilog_uart::uart",
+        "has_parameter",
+        "verilog_uart::uart::DATA_WIDTH"
+      ]
+    ],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0007",
+    "question_text": "What ports does module uart_tx have?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "Module uart_tx has 8 ports: busy, clk, prescale, rst, s_axis_tdata, s_axis_tready, s_axis_tvalid, txd",
+    "evidence_nodes": [
+      "verilog_uart::uart_tx",
+      "verilog_uart::uart_tx::clk",
+      "verilog_uart::uart_tx::rst",
+      "verilog_uart::uart_tx::s_axis_tdata",
+      "verilog_uart::uart_tx::s_axis_tvalid",
+      "verilog_uart::uart_tx::s_axis_tready",
+      "verilog_uart::uart_tx::txd",
+      "verilog_uart::uart_tx::busy",
+      "verilog_uart::uart_tx::prescale"
+    ],
+    "evidence_edges": [
+      [
+        "verilog_uart::uart_tx",
+        "has_port",
+        "verilog_uart::uart_tx::clk"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "has_port",
+        "verilog_uart::uart_tx::rst"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "has_port",
+        "verilog_uart::uart_tx::s_axis_tdata"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "has_port",
+        "verilog_uart::uart_tx::s_axis_tvalid"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "has_port",
+        "verilog_uart::uart_tx::s_axis_tready"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "has_port",
+        "verilog_uart::uart_tx::txd"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "has_port",
+        "verilog_uart::uart_tx::busy"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "has_port",
+        "verilog_uart::uart_tx::prescale"
+      ]
+    ],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0008",
+    "question_text": "What registers does module uart_tx contain?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "uart_tx contains 6 registers: bit_cnt, busy_reg, data_reg, prescale_reg, s_axis_tready_reg, txd_reg",
+    "evidence_nodes": [
+      "verilog_uart::uart_tx",
+      "verilog_uart::uart_tx::reg::txd_reg",
+      "verilog_uart::uart_tx::reg::data_reg",
+      "verilog_uart::uart_tx::reg::prescale_reg",
+      "verilog_uart::uart_tx::reg::s_axis_tready_reg",
+      "verilog_uart::uart_tx::reg::bit_cnt",
+      "verilog_uart::uart_tx::reg::busy_reg"
+    ],
+    "evidence_edges": [
+      [
+        "verilog_uart::uart_tx",
+        "contains_register",
+        "verilog_uart::uart_tx::reg::txd_reg"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "contains_register",
+        "verilog_uart::uart_tx::reg::data_reg"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "contains_register",
+        "verilog_uart::uart_tx::reg::prescale_reg"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "contains_register",
+        "verilog_uart::uart_tx::reg::s_axis_tready_reg"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "contains_register",
+        "verilog_uart::uart_tx::reg::bit_cnt"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "contains_register",
+        "verilog_uart::uart_tx::reg::busy_reg"
+      ]
+    ],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0009",
+    "question_text": "What parameters does module uart_tx have?",
+    "category": "structural",
+    "difficulty": "easy",
+    "hops_required": 1,
+    "gold_answer": "uart_tx has parameters: DATA_WIDTH=8",
+    "evidence_nodes": [
+      "verilog_uart::uart_tx",
+      "verilog_uart::uart_tx::DATA_WIDTH"
+    ],
+    "evidence_edges": [
+      [
+        "verilog_uart::uart_tx",
+        "has_parameter",
+        "verilog_uart::uart_tx::DATA_WIDTH"
+      ]
+    ],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0010",
+    "question_text": "What clocks drive registers in module uart_tx?",
+    "category": "cross_artifact",
+    "difficulty": "medium",
+    "hops_required": 2,
+    "gold_answer": "Clocks driving registers in uart_tx: clk",
+    "evidence_nodes": [
+      "verilog_uart::uart_tx",
+      "verilog_uart::clk::clk",
+      "verilog_uart::uart_tx::reg::prescale_reg",
+      "verilog_uart::uart_tx::reg::s_axis_tready_reg",
+      "verilog_uart::uart_tx::reg::bit_cnt",
+      "verilog_uart::uart_tx::reg::txd_reg",
+      "verilog_uart::uart_tx::reg::data_reg",
+      "verilog_uart::uart_tx::reg::busy_reg"
+    ],
+    "evidence_edges": [
+      [
+        "verilog_uart::uart_tx",
+        "contains_register",
+        "verilog_uart::uart_tx::reg::txd_reg"
+      ],
+      [
+        "verilog_uart::uart_tx::reg::txd_reg",
+        "clocked_by",
+        "verilog_uart::clk::clk"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "contains_register",
+        "verilog_uart::uart_tx::reg::data_reg"
+      ],
+      [
+        "verilog_uart::uart_tx::reg::data_reg",
+        "clocked_by",
+        "verilog_uart::clk::clk"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "contains_register",
+        "verilog_uart::uart_tx::reg::prescale_reg"
+      ],
+      [
+        "verilog_uart::uart_tx::reg::prescale_reg",
+        "clocked_by",
+        "verilog_uart::clk::clk"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "contains_register",
+        "verilog_uart::uart_tx::reg::s_axis_tready_reg"
+      ],
+      [
+        "verilog_uart::uart_tx::reg::s_axis_tready_reg",
+        "clocked_by",
+        "verilog_uart::clk::clk"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "contains_register",
+        "verilog_uart::uart_tx::reg::bit_cnt"
+      ],
+      [
+        "verilog_uart::uart_tx::reg::bit_cnt",
+        "clocked_by",
+        "verilog_uart::clk::clk"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "contains_register",
+        "verilog_uart::uart_tx::reg::busy_reg"
+      ],
+      [
+        "verilog_uart::uart_tx::reg::busy_reg",
+        "clocked_by",
+        "verilog_uart::clk::clk"
+      ]
+    ],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0011",
+    "question_text": "What constraints apply to module uart_tx?",
+    "category": "cross_artifact",
+    "difficulty": "medium",
+    "hops_required": 2,
+    "gold_answer": "Constraints on uart_tx: create_clock (1), set_clock_uncertainty (1), set_false_path (1), set_input_delay (2), set_output_delay (2)",
+    "evidence_nodes": [
+      "verilog_uart::uart_tx",
+      "verilog_uart::sdc::0002",
+      "verilog_uart::sdc::0017",
+      "verilog_uart::sdc::0005",
+      "verilog_uart::uart_tx::rst",
+      "verilog_uart::sdc::0001",
+      "verilog_uart::sdc::0015",
+      "verilog_uart::sdc::0016",
+      "verilog_uart::uart_tx::txd",
+      "verilog_uart::sdc::0008",
+      "verilog_uart::uart_tx::s_axis_tready",
+      "verilog_uart::uart_tx::clk",
+      "verilog_uart::uart_tx::s_axis_tvalid"
+    ],
+    "evidence_edges": [
+      [
+        "verilog_uart::uart_tx",
+        "has_port",
+        "verilog_uart::uart_tx::clk"
+      ],
+      [
+        "verilog_uart::sdc::0001",
+        "applies_to",
+        "verilog_uart::uart_tx::clk"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "has_port",
+        "verilog_uart::uart_tx::clk"
+      ],
+      [
+        "verilog_uart::sdc::0017",
+        "applies_to",
+        "verilog_uart::uart_tx::clk"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "has_port",
+        "verilog_uart::uart_tx::rst"
+      ],
+      [
+        "verilog_uart::sdc::0002",
+        "applies_to",
+        "verilog_uart::uart_tx::rst"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "has_port",
+        "verilog_uart::uart_tx::rst"
+      ],
+      [
+        "verilog_uart::sdc::0016",
+        "applies_to",
+        "verilog_uart::uart_tx::rst"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "has_port",
+        "verilog_uart::uart_tx::s_axis_tvalid"
+      ],
+      [
+        "verilog_uart::sdc::0005",
+        "applies_to",
+        "verilog_uart::uart_tx::s_axis_tvalid"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "has_port",
+        "verilog_uart::uart_tx::s_axis_tready"
+      ],
+      [
+        "verilog_uart::sdc::0015",
+        "applies_to",
+        "verilog_uart::uart_tx::s_axis_tready"
+      ],
+      [
+        "verilog_uart::uart_tx",
+        "has_port",
+        "verilog_uart::uart_tx::txd"
+      ],
+      [
+        "verilog_uart::sdc::0008",
+        "applies_to",
+        "verilog_uart::uart_tx::txd"
+      ]
+    ],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0012",
+    "question_text": "What clocks drive registers in module uart_rx?",
+    "category": "cross_artifact",
+    "difficulty": "medium",
+    "hops_required": 2,
+    "gold_answer": "Clocks driving registers in uart_rx: clk",
+    "evidence_nodes": [
+      "verilog_uart::uart_rx",
+      "verilog_uart::uart_rx::reg::m_axis_tdata_reg",
+      "verilog_uart::uart_rx::reg::data_reg",
+      "verilog_uart::clk::clk",
+      "verilog_uart::uart_rx::reg::rxd_reg",
+      "verilog_uart::uart_rx::reg::busy_reg",
+      "verilog_uart::uart_rx::reg::m_axis_tvalid_reg",
+      "verilog_uart::uart_rx::reg::overrun_error_reg",
+      "verilog_uart::uart_rx::reg::prescale_reg",
+      "verilog_uart::uart_rx::reg::frame_error_reg",
+      "verilog_uart::uart_rx::reg::bit_cnt"
+    ],
+    "evidence_edges": [
+      [
+        "verilog_uart::uart_rx",
+        "contains_register",
+        "verilog_uart::uart_rx::reg::rxd_reg"
+      ],
+      [
+        "verilog_uart::uart_rx::reg::rxd_reg",
+        "clocked_by",
+        "verilog_uart::clk::clk"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "contains_register",
+        "verilog_uart::uart_rx::reg::busy_reg"
+      ],
+      [
+        "verilog_uart::uart_rx::reg::busy_reg",
+        "clocked_by",
+        "verilog_uart::clk::clk"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "contains_register",
+        "verilog_uart::uart_rx::reg::bit_cnt"
+      ],
+      [
+        "verilog_uart::uart_rx::reg::bit_cnt",
+        "clocked_by",
+        "verilog_uart::clk::clk"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "contains_register",
+        "verilog_uart::uart_rx::reg::overrun_error_reg"
+      ],
+      [
+        "verilog_uart::uart_rx::reg::overrun_error_reg",
+        "clocked_by",
+        "verilog_uart::clk::clk"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "contains_register",
+        "verilog_uart::uart_rx::reg::frame_error_reg"
+      ],
+      [
+        "verilog_uart::uart_rx::reg::frame_error_reg",
+        "clocked_by",
+        "verilog_uart::clk::clk"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "contains_register",
+        "verilog_uart::uart_rx::reg::prescale_reg"
+      ],
+      [
+        "verilog_uart::uart_rx::reg::prescale_reg",
+        "clocked_by",
+        "verilog_uart::clk::clk"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "contains_register",
+        "verilog_uart::uart_rx::reg::data_reg"
+      ],
+      [
+        "verilog_uart::uart_rx::reg::data_reg",
+        "clocked_by",
+        "verilog_uart::clk::clk"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "contains_register",
+        "verilog_uart::uart_rx::reg::m_axis_tvalid_reg"
+      ],
+      [
+        "verilog_uart::uart_rx::reg::m_axis_tvalid_reg",
+        "clocked_by",
+        "verilog_uart::clk::clk"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "contains_register",
+        "verilog_uart::uart_rx::reg::m_axis_tdata_reg"
+      ],
+      [
+        "verilog_uart::uart_rx::reg::m_axis_tdata_reg",
+        "clocked_by",
+        "verilog_uart::clk::clk"
+      ]
+    ],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0013",
+    "question_text": "What constraints apply to module uart_rx?",
+    "category": "cross_artifact",
+    "difficulty": "medium",
+    "hops_required": 2,
+    "gold_answer": "Constraints on uart_rx: create_clock (1), set_clock_uncertainty (1), set_false_path (1), set_input_delay (3), set_output_delay (1)",
+    "evidence_nodes": [
+      "verilog_uart::uart_rx",
+      "verilog_uart::uart_rx::m_axis_tready",
+      "verilog_uart::uart_rx::rxd",
+      "verilog_uart::sdc::0002",
+      "verilog_uart::sdc::0017",
+      "verilog_uart::sdc::0001",
+      "verilog_uart::sdc::0016",
+      "verilog_uart::uart_rx::clk",
+      "verilog_uart::sdc::0003",
+      "verilog_uart::sdc::0014",
+      "verilog_uart::uart_rx::rst",
+      "verilog_uart::uart_rx::m_axis_tvalid",
+      "verilog_uart::sdc::0006"
+    ],
+    "evidence_edges": [
+      [
+        "verilog_uart::uart_rx",
+        "has_port",
+        "verilog_uart::uart_rx::clk"
+      ],
+      [
+        "verilog_uart::sdc::0001",
+        "applies_to",
+        "verilog_uart::uart_rx::clk"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "has_port",
+        "verilog_uart::uart_rx::clk"
+      ],
+      [
+        "verilog_uart::sdc::0017",
+        "applies_to",
+        "verilog_uart::uart_rx::clk"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "has_port",
+        "verilog_uart::uart_rx::rst"
+      ],
+      [
+        "verilog_uart::sdc::0002",
+        "applies_to",
+        "verilog_uart::uart_rx::rst"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "has_port",
+        "verilog_uart::uart_rx::rst"
+      ],
+      [
+        "verilog_uart::sdc::0016",
+        "applies_to",
+        "verilog_uart::uart_rx::rst"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "has_port",
+        "verilog_uart::uart_rx::m_axis_tvalid"
+      ],
+      [
+        "verilog_uart::sdc::0014",
+        "applies_to",
+        "verilog_uart::uart_rx::m_axis_tvalid"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "has_port",
+        "verilog_uart::uart_rx::m_axis_tready"
+      ],
+      [
+        "verilog_uart::sdc::0006",
+        "applies_to",
+        "verilog_uart::uart_rx::m_axis_tready"
+      ],
+      [
+        "verilog_uart::uart_rx",
+        "has_port",
+        "verilog_uart::uart_rx::rxd"
+      ],
+      [
+        "verilog_uart::sdc::0003",
+        "applies_to",
+        "verilog_uart::uart_rx::rxd"
+      ]
+    ],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0014",
+    "question_text": "Which commits modified module uart_rx?",
+    "category": "temporal",
+    "difficulty": "medium",
+    "hops_required": 1,
+    "gold_answer": "7 commits modified uart_rx: af479b1c: Rename ports; a67928c9: Happy new year; f8e3d10f: Happy new year; 105bf941: Convert to synchronous resets; 8a1df4c2: Register rxd input",
+    "evidence_nodes": [
+      "verilog_uart::uart_rx",
+      "verilog_uart::commit::af479b1c",
+      "verilog_uart::commit::a67928c9",
+      "verilog_uart::commit::f8e3d10f",
+      "verilog_uart::commit::105bf941",
+      "verilog_uart::commit::8a1df4c2",
+      "verilog_uart::commit::9d9577ea",
+      "verilog_uart::commit::db0017a2"
+    ],
+    "evidence_edges": [
+      [
+        "verilog_uart::commit::af479b1c",
+        "modifies",
+        "verilog_uart::uart_rx"
+      ],
+      [
+        "verilog_uart::commit::a67928c9",
+        "modifies",
+        "verilog_uart::uart_rx"
+      ],
+      [
+        "verilog_uart::commit::f8e3d10f",
+        "modifies",
+        "verilog_uart::uart_rx"
+      ],
+      [
+        "verilog_uart::commit::105bf941",
+        "modifies",
+        "verilog_uart::uart_rx"
+      ],
+      [
+        "verilog_uart::commit::8a1df4c2",
+        "modifies",
+        "verilog_uart::uart_rx"
+      ],
+      [
+        "verilog_uart::commit::9d9577ea",
+        "modifies",
+        "verilog_uart::uart_rx"
+      ],
+      [
+        "verilog_uart::commit::db0017a2",
+        "modifies",
+        "verilog_uart::uart_rx"
+      ]
+    ],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0015",
+    "question_text": "Which commits modified module uart_tx?",
+    "category": "temporal",
+    "difficulty": "medium",
+    "hops_required": 1,
+    "gold_answer": "6 commits modified uart_tx: af479b1c: Rename ports; a67928c9: Happy new year; f8e3d10f: Happy new year; 105bf941: Convert to synchronous resets; 9d9577ea: Rename axi to axis",
+    "evidence_nodes": [
+      "verilog_uart::uart_tx",
+      "verilog_uart::commit::af479b1c",
+      "verilog_uart::commit::a67928c9",
+      "verilog_uart::commit::f8e3d10f",
+      "verilog_uart::commit::105bf941",
+      "verilog_uart::commit::9d9577ea",
+      "verilog_uart::commit::db0017a2"
+    ],
+    "evidence_edges": [
+      [
+        "verilog_uart::commit::af479b1c",
+        "modifies",
+        "verilog_uart::uart_tx"
+      ],
+      [
+        "verilog_uart::commit::a67928c9",
+        "modifies",
+        "verilog_uart::uart_tx"
+      ],
+      [
+        "verilog_uart::commit::f8e3d10f",
+        "modifies",
+        "verilog_uart::uart_tx"
+      ],
+      [
+        "verilog_uart::commit::105bf941",
+        "modifies",
+        "verilog_uart::uart_tx"
+      ],
+      [
+        "verilog_uart::commit::9d9577ea",
+        "modifies",
+        "verilog_uart::uart_tx"
+      ],
+      [
+        "verilog_uart::commit::db0017a2",
+        "modifies",
+        "verilog_uart::uart_tx"
+      ]
+    ],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0016",
+    "question_text": "Which commits modified module uart?",
+    "category": "temporal",
+    "difficulty": "medium",
+    "hops_required": 1,
+    "gold_answer": "4 commits modified uart: af479b1c: Rename ports; a67928c9: Happy new year; f8e3d10f: Happy new year; 9d9577ea: Rename axi to axis",
+    "evidence_nodes": [
+      "verilog_uart::uart",
+      "verilog_uart::commit::af479b1c",
+      "verilog_uart::commit::a67928c9",
+      "verilog_uart::commit::f8e3d10f",
+      "verilog_uart::commit::9d9577ea"
+    ],
+    "evidence_edges": [
+      [
+        "verilog_uart::commit::af479b1c",
+        "modifies",
+        "verilog_uart::uart"
+      ],
+      [
+        "verilog_uart::commit::a67928c9",
+        "modifies",
+        "verilog_uart::uart"
+      ],
+      [
+        "verilog_uart::commit::f8e3d10f",
+        "modifies",
+        "verilog_uart::uart"
+      ],
+      [
+        "verilog_uart::commit::9d9577ea",
+        "modifies",
+        "verilog_uart::uart"
+      ]
+    ],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0017",
+    "question_text": "What is the impact of changing module uart_rx?",
+    "category": "what_if",
+    "difficulty": "hard",
+    "hops_required": 2,
+    "gold_answer": "Changing uart_rx could affect 55 artifacts: 1 Clocks, 7 Commits, 7 Constraints, 2 Instances, 2 Modules, 15 Nets, 2 Parameters, 10 Ports, 9 Registers",
+    "evidence_nodes": [
+      "verilog_uart::uart_rx",
+      "verilog_uart::uart_rx::reg::m_axis_tdata_reg",
+      "verilog_uart::commit::db0017a2",
+      "verilog_uart::sdc::0017",
+      "verilog_uart::clk::clk",
+      "verilog_uart::uart_rx::reg::rxd_reg",
+      "verilog_uart::sdc::0016",
+      "verilog_uart::uart_rx::reg::m_axis_tvalid_reg",
+      "verilog_uart::commit::af479b1c",
+      "verilog_uart::uart_rx::rst",
+      "verilog_uart::uart::rx_frame_error",
+      "verilog_uart::uart_rx::m_axis_tready",
+      "verilog_uart::uart_rx::rxd",
+      "verilog_uart::sdc::0002",
+      "verilog_uart::commit::8a1df4c2",
+      "verilog_uart::commit::9d9577ea",
+      "verilog_uart::uart::s_axis_tready",
+      "verilog_uart::uart_rx::reg::overrun_error_reg",
+      "verilog_uart::uart_rx::reg::prescale_reg",
+      "verilog_uart::uart::inst::uart_tx_inst",
+      "verilog_uart::uart::clk",
+      "verilog_uart::uart_rx::reg::bit_cnt",
+      "verilog_uart::uart_rx::reg::data_reg",
+      "verilog_uart::uart_tx",
+      "verilog_uart::uart::rst",
+      "verilog_uart::commit::f8e3d10f",
+      "verilog_uart::uart::s_axis_tdata",
+      "verilog_uart::uart_rx::m_axis_tvalid",
+      "verilog_uart::uart_rx::DATA_WIDTH",
+      "verilog_uart::commit::a67928c9",
+      "verilog_uart::sdc::0006",
+      "verilog_uart::uart_rx::reg::frame_error_reg",
+      "verilog_uart::uart_rx::busy",
+      "verilog_uart::uart_rx::prescale",
+      "verilog_uart::uart_rx::frame_error",
+      "verilog_uart::uart::prescale",
+      "verilog_uart::uart::rx_overrun_error",
+      "verilog_uart::sdc::0001",
+      "verilog_uart::uart::tx_busy",
+      "verilog_uart::commit::105bf941",
+      "verilog_uart::uart_rx::reg::busy_reg",
+      "verilog_uart::uart::m_axis_tdata",
+      "verilog_uart::uart_rx::clk",
+      "verilog_uart::uart::m_axis_tready",
+      "verilog_uart::uart::rx_busy",
+      "verilog_uart::sdc::0003",
+      "verilog_uart::sdc::0014",
+      "verilog_uart::uart::DATA_WIDTH",
+      "verilog_uart::uart",
+      "verilog_uart::uart::s_axis_tvalid",
+      "verilog_uart::uart::m_axis_tvalid",
+      "verilog_uart::uart::txd",
+      "verilog_uart::uart_rx::m_axis_tdata",
+      "verilog_uart::uart_rx::overrun_error",
+      "verilog_uart::uart::rxd",
+      "verilog_uart::uart::inst::uart_rx_inst"
+    ],
+    "evidence_edges": [],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0018",
+    "question_text": "Why is module uart_rx risky to modify?",
+    "category": "what_if",
+    "difficulty": "hard",
+    "hops_required": 2,
+    "gold_answer": "uart_rx is risky because: instantiated by 1 parent modules (uart); has 10 connected ports; 7 constraints depend on it",
+    "evidence_nodes": [
+      "verilog_uart::uart_rx",
+      "verilog_uart::uart_rx::reg::m_axis_tdata_reg",
+      "verilog_uart::commit::db0017a2",
+      "verilog_uart::uart_rx::reg::rxd_reg",
+      "verilog_uart::uart_rx::reg::m_axis_tvalid_reg",
+      "verilog_uart::commit::af479b1c",
+      "verilog_uart::uart_rx::rst",
+      "verilog_uart::uart_rx::m_axis_tready",
+      "verilog_uart::uart_rx::rxd",
+      "verilog_uart::commit::8a1df4c2",
+      "verilog_uart::commit::9d9577ea",
+      "verilog_uart::uart_rx::reg::overrun_error_reg",
+      "verilog_uart::uart_rx::reg::prescale_reg",
+      "verilog_uart::uart_rx::reg::bit_cnt",
+      "verilog_uart::uart_rx::reg::data_reg",
+      "verilog_uart::commit::f8e3d10f",
+      "verilog_uart::uart_rx::m_axis_tvalid",
+      "verilog_uart::uart_rx::DATA_WIDTH",
+      "verilog_uart::commit::a67928c9",
+      "verilog_uart::uart_rx::reg::frame_error_reg",
+      "verilog_uart::uart_rx::busy",
+      "verilog_uart::uart_rx::prescale",
+      "verilog_uart::uart_rx::frame_error",
+      "verilog_uart::commit::105bf941",
+      "verilog_uart::uart_rx::reg::busy_reg",
+      "verilog_uart::uart_rx::clk",
+      "verilog_uart::uart",
+      "verilog_uart::uart_rx::m_axis_tdata",
+      "verilog_uart::uart_rx::overrun_error",
+      "verilog_uart::uart::inst::uart_rx_inst"
+    ],
+    "evidence_edges": [],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0019",
+    "question_text": "What is the impact of changing module uart_tx?",
+    "category": "what_if",
+    "difficulty": "hard",
+    "hops_required": 2,
+    "gold_answer": "Changing uart_tx could affect 49 artifacts: 1 Clocks, 6 Commits, 7 Constraints, 2 Instances, 2 Modules, 15 Nets, 2 Parameters, 8 Ports, 6 Registers",
+    "evidence_nodes": [
+      "verilog_uart::uart_tx",
+      "verilog_uart::commit::db0017a2",
+      "verilog_uart::sdc::0017",
+      "verilog_uart::clk::clk",
+      "verilog_uart::uart_tx::reg::prescale_reg",
+      "verilog_uart::sdc::0016",
+      "verilog_uart::commit::af479b1c",
+      "verilog_uart::uart::rx_frame_error",
+      "verilog_uart::uart_tx::reg::busy_reg",
+      "verilog_uart::uart_tx::prescale",
+      "verilog_uart::uart_tx::s_axis_tvalid",
+      "verilog_uart::sdc::0002",
+      "verilog_uart::uart_tx::rst",
+      "verilog_uart::commit::9d9577ea",
+      "verilog_uart::uart::s_axis_tready",
+      "verilog_uart::uart_tx::txd",
+      "verilog_uart::uart::inst::uart_tx_inst",
+      "verilog_uart::uart_tx::s_axis_tready",
+      "verilog_uart::uart::clk",
+      "verilog_uart::uart_tx::reg::data_reg",
+      "verilog_uart::sdc::0015",
+      "verilog_uart::uart_rx",
+      "verilog_uart::uart::rst",
+      "verilog_uart::uart_tx::s_axis_tdata",
+      "verilog_uart::uart_tx::reg::s_axis_tready_reg",
+      "verilog_uart::uart_tx::reg::bit_cnt",
+      "verilog_uart::commit::f8e3d10f",
+      "verilog_uart::uart::s_axis_tdata",
+      "verilog_uart::sdc::0008",
+      "verilog_uart::uart_tx::DATA_WIDTH",
+      "verilog_uart::commit::a67928c9",
+      "verilog_uart::uart::prescale",
+      "verilog_uart::sdc::0005",
+      "verilog_uart::uart::rx_overrun_error",
+      "verilog_uart::sdc::0001",
+      "verilog_uart::uart::tx_busy",
+      "verilog_uart::commit::105bf941",
+      "verilog_uart::uart_tx::busy",
+      "verilog_uart::uart::m_axis_tdata",
+      "verilog_uart::uart::m_axis_tready",
+      "verilog_uart::uart::rx_busy",
+      "verilog_uart::uart::s_axis_tvalid",
+      "verilog_uart::uart::DATA_WIDTH",
+      "verilog_uart::uart",
+      "verilog_uart::uart_tx::reg::txd_reg",
+      "verilog_uart::uart::m_axis_tvalid",
+      "verilog_uart::uart::txd",
+      "verilog_uart::uart_tx::clk",
+      "verilog_uart::uart::rxd",
+      "verilog_uart::uart::inst::uart_rx_inst"
+    ],
+    "evidence_edges": [],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0020",
+    "question_text": "Why is module uart_tx risky to modify?",
+    "category": "what_if",
+    "difficulty": "hard",
+    "hops_required": 2,
+    "gold_answer": "uart_tx is risky because: instantiated by 1 parent modules (uart); has 8 connected ports; 7 constraints depend on it",
+    "evidence_nodes": [
+      "verilog_uart::uart_tx",
+      "verilog_uart::commit::db0017a2",
+      "verilog_uart::uart_tx::reg::prescale_reg",
+      "verilog_uart::commit::af479b1c",
+      "verilog_uart::uart_tx::reg::busy_reg",
+      "verilog_uart::uart_tx::prescale",
+      "verilog_uart::uart_tx::s_axis_tvalid",
+      "verilog_uart::uart_tx::rst",
+      "verilog_uart::commit::9d9577ea",
+      "verilog_uart::uart_tx::txd",
+      "verilog_uart::uart::inst::uart_tx_inst",
+      "verilog_uart::uart_tx::s_axis_tready",
+      "verilog_uart::uart_tx::reg::data_reg",
+      "verilog_uart::uart_tx::s_axis_tdata",
+      "verilog_uart::uart_tx::reg::s_axis_tready_reg",
+      "verilog_uart::uart_tx::reg::bit_cnt",
+      "verilog_uart::commit::f8e3d10f",
+      "verilog_uart::uart_tx::DATA_WIDTH",
+      "verilog_uart::commit::a67928c9",
+      "verilog_uart::commit::105bf941",
+      "verilog_uart::uart_tx::busy",
+      "verilog_uart::uart",
+      "verilog_uart::uart_tx::reg::txd_reg",
+      "verilog_uart::uart_tx::clk"
+    ],
+    "evidence_edges": [],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0021",
+    "question_text": "What is the impact of changing module uart?",
+    "category": "what_if",
+    "difficulty": "hard",
+    "hops_required": 2,
+    "gold_answer": "Changing uart could affect 62 artifacts: 7 Commits, 2 Instances, 2 Modules, 15 Nets, 3 Parameters, 18 Ports, 15 Registers",
+    "evidence_nodes": [
+      "verilog_uart::uart",
+      "verilog_uart::commit::db0017a2",
+      "verilog_uart::commit::af479b1c",
+      "verilog_uart::uart_tx::reg::busy_reg",
+      "verilog_uart::uart_tx::prescale",
+      "verilog_uart::uart_rx::rxd",
+      "verilog_uart::uart_tx::rst",
+      "verilog_uart::commit::8a1df4c2",
+      "verilog_uart::uart::s_axis_tready",
+      "verilog_uart::uart::inst::uart_tx_inst",
+      "verilog_uart::uart_rx::reg::prescale_reg",
+      "verilog_uart::uart::clk",
+      "verilog_uart::uart_tx::s_axis_tready",
+      "verilog_uart::uart_tx::reg::data_reg",
+      "verilog_uart::uart_rx::reg::bit_cnt",
+      "verilog_uart::uart_tx",
+      "verilog_uart::commit::f8e3d10f",
+      "verilog_uart::uart::s_axis_tdata",
+      "verilog_uart::uart_tx::reg::bit_cnt",
+      "verilog_uart::commit::a67928c9",
+      "verilog_uart::uart_rx::busy",
+      "verilog_uart::uart_rx::prescale",
+      "verilog_uart::uart_rx::frame_error",
+      "verilog_uart::uart::prescale",
+      "verilog_uart::uart::rx_overrun_error",
+      "verilog_uart::uart::tx_busy",
+      "verilog_uart::uart_rx::reg::busy_reg",
+      "verilog_uart::uart::m_axis_tready",
+      "verilog_uart::uart::s_axis_tvalid",
+      "verilog_uart::uart::DATA_WIDTH",
+      "verilog_uart::uart_tx::reg::txd_reg",
+      "verilog_uart::uart::txd",
+      "verilog_uart::uart_tx::clk",
+      "verilog_uart::uart_rx::overrun_error",
+      "verilog_uart::uart_rx::reg::m_axis_tdata_reg",
+      "verilog_uart::uart_rx::reg::rxd_reg",
+      "verilog_uart::uart_tx::reg::prescale_reg",
+      "verilog_uart::uart_rx::reg::m_axis_tvalid_reg",
+      "verilog_uart::uart_rx::rst",
+      "verilog_uart::uart::rx_frame_error",
+      "verilog_uart::uart_tx::s_axis_tvalid",
+      "verilog_uart::uart_rx::m_axis_tready",
+      "verilog_uart::commit::9d9577ea",
+      "verilog_uart::uart_tx::txd",
+      "verilog_uart::uart_rx::reg::overrun_error_reg",
+      "verilog_uart::uart_rx",
+      "verilog_uart::uart_rx::reg::data_reg",
+      "verilog_uart::uart::rst",
+      "verilog_uart::uart_tx::s_axis_tdata",
+      "verilog_uart::uart_tx::reg::s_axis_tready_reg",
+      "verilog_uart::uart_tx::DATA_WIDTH",
+      "verilog_uart::uart_rx::m_axis_tvalid",
+      "verilog_uart::uart_rx::DATA_WIDTH",
+      "verilog_uart::uart_rx::reg::frame_error_reg",
+      "verilog_uart::commit::105bf941",
+      "verilog_uart::uart_tx::busy",
+      "verilog_uart::uart::m_axis_tdata",
+      "verilog_uart::uart_rx::clk",
+      "verilog_uart::uart::rx_busy",
+      "verilog_uart::uart::m_axis_tvalid",
+      "verilog_uart::uart_rx::m_axis_tdata",
+      "verilog_uart::uart::rxd",
+      "verilog_uart::uart::inst::uart_rx_inst"
+    ],
+    "evidence_edges": [],
+    "design_name": "verilog_uart"
+  },
+  {
+    "question_id": "verilog_uart::q::0022",
+    "question_text": "Why is module uart risky to modify?",
+    "category": "what_if",
+    "difficulty": "hard",
+    "hops_required": 2,
+    "gold_answer": "uart is risky because: has 18 connected ports",
+    "evidence_nodes": [
+      "verilog_uart::uart",
+      "verilog_uart::commit::af479b1c",
+      "verilog_uart::uart::rx_frame_error",
+      "verilog_uart::uart::s_axis_tready",
+      "verilog_uart::commit::9d9577ea",
+      "verilog_uart::uart::inst::uart_tx_inst",
+      "verilog_uart::uart::clk",
+      "verilog_uart::uart_rx",
+      "verilog_uart::uart_tx",
+      "verilog_uart::uart::rst",
+      "verilog_uart::commit::f8e3d10f",
+      "verilog_uart::uart::s_axis_tdata",
+      "verilog_uart::commit::a67928c9",
+      "verilog_uart::uart::prescale",
+      "verilog_uart::uart::rx_overrun_error",
+      "verilog_uart::uart::tx_busy",
+      "verilog_uart::uart::m_axis_tdata",
+      "verilog_uart::uart::m_axis_tready",
+      "verilog_uart::uart::rx_busy",
+      "verilog_uart::uart::s_axis_tvalid",
+      "verilog_uart::uart::DATA_WIDTH",
+      "verilog_uart::uart::m_axis_tvalid",
+      "verilog_uart::uart::txd",
+      "verilog_uart::uart::rxd",
+      "verilog_uart::uart::inst::uart_rx_inst"
+    ],
+    "evidence_edges": [],
+    "design_name": "verilog_uart"
+  }
+]

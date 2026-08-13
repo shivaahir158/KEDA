@@ -1,0 +1,703 @@
+{
+  "uart_fixture": {
+    "num_questions": 23,
+    "categories": {
+      "structural": 12,
+      "cross_artifact": 3,
+      "what_if": 8
+    },
+    "graph_nodes": 56,
+    "graph_edges": 96,
+    "build_time_s": 0.0722343921661377,
+    "metrics": {
+      "llm_only": {
+        "evidence_recall": 0.0,
+        "evidence_precision": 0.0,
+        "token_overlap_f1": 0.17072519318679188,
+        "key_entity_recall": 0.3776068134763787,
+        "hallucination_rate": 0.0,
+        "avg_latency_ms": 1174.7113621753194,
+        "num_questions": 23
+      },
+      "llm_only_by_category": {
+        "structural": {
+          "evidence_recall": 0.0,
+          "evidence_precision": 0.0,
+          "token_overlap_f1": 0.16391848498737488,
+          "key_entity_recall": 0.3070797258297258,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 889.2757296562195,
+          "num_questions": 12
+        },
+        "cross_artifact": {
+          "evidence_recall": 0.0,
+          "evidence_precision": 0.0,
+          "token_overlap_f1": 0.2832521962956746,
+          "key_entity_recall": 0.3333333333333333,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 1286.7504755655925,
+          "num_questions": 3
+        },
+        "what_if": {
+          "evidence_recall": 0.0,
+          "evidence_precision": 0.0,
+          "token_overlap_f1": 0.1387376293200864,
+          "key_entity_recall": 0.5,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 1560.8501434326172,
+          "num_questions": 8
+        }
+      },
+      "kg_only": {
+        "evidence_recall": 0.8842378233682581,
+        "evidence_precision": 0.9586877756773787,
+        "token_overlap_f1": 0.32534131672893923,
+        "key_entity_recall": 0.8648221343873518,
+        "hallucination_rate": 0.0,
+        "avg_latency_ms": 0.25716035262398096,
+        "num_questions": 23
+      },
+      "kg_only_by_category": {
+        "structural": {
+          "evidence_recall": 0.9242424242424243,
+          "evidence_precision": 1.0,
+          "token_overlap_f1": 0.38575728100689405,
+          "key_entity_recall": 0.9242424242424243,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 0.17728408177693686,
+          "num_questions": 12
+        },
+        "cross_artifact": {
+          "evidence_recall": 1.0,
+          "evidence_precision": 1.0,
+          "token_overlap_f1": 0.25800488545586586,
+          "key_entity_recall": 0.6666666666666666,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 0.23651123046875,
+          "num_questions": 3
+        },
+        "what_if": {
+          "evidence_recall": 0.7808201058201059,
+          "evidence_precision": 0.8812273550724637,
+          "token_overlap_f1": 0.25996853203940956,
+          "key_entity_recall": 0.85,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 0.3847181797027588,
+          "num_questions": 8
+        }
+      },
+      "keda_qa": {
+        "evidence_recall": 0.8842378233682581,
+        "evidence_precision": 0.9586877756773787,
+        "token_overlap_f1": 0.17154777905241222,
+        "key_entity_recall": 0.772068511198946,
+        "hallucination_rate": 0.0,
+        "avg_latency_ms": 4612.912986589515,
+        "num_questions": 23
+      },
+      "keda_qa_by_category": {
+        "structural": {
+          "evidence_recall": 0.9242424242424243,
+          "evidence_precision": 1.0,
+          "token_overlap_f1": 0.22750108373539216,
+          "key_entity_recall": 0.8686868686868686,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 3760.4127526283264,
+          "num_questions": 12
+        },
+        "cross_artifact": {
+          "evidence_recall": 1.0,
+          "evidence_precision": 1.0,
+          "token_overlap_f1": 0.15735494174010764,
+          "key_entity_recall": 0.7777777777777777,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 4135.297377904256,
+          "num_questions": 3
+        },
+        "what_if": {
+          "evidence_recall": 0.7808201058201059,
+          "evidence_precision": 0.8812273550724637,
+          "token_overlap_f1": 0.09294013602005655,
+          "key_entity_recall": 0.625,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 6070.769190788269,
+          "num_questions": 8
+        }
+      },
+      "vector_rag": {
+        "evidence_recall": 0.8311811175941611,
+        "evidence_precision": 0.41304347826086957,
+        "token_overlap_f1": 0.19454460123905667,
+        "key_entity_recall": 0.780764163372859,
+        "hallucination_rate": 0.0,
+        "avg_latency_ms": 1813111.7391068002,
+        "num_questions": 23
+      },
+      "vector_rag_by_category": {
+        "structural": {
+          "evidence_recall": 0.9242424242424243,
+          "evidence_precision": 0.21666666666666667,
+          "token_overlap_f1": 0.2738488566191586,
+          "key_entity_recall": 0.8964646464646465,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 3469592.960000038,
+          "num_questions": 12
+        },
+        "cross_artifact": {
+          "evidence_recall": 1.0,
+          "evidence_precision": 0.31666666666666665,
+          "token_overlap_f1": 0.13049201694362986,
+          "key_entity_recall": 0.6666666666666666,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 3989.077647527059,
+          "num_questions": 3
+        },
+        "what_if": {
+          "evidence_recall": 0.6282820767195767,
+          "evidence_precision": 0.74375,
+          "token_overlap_f1": 0.09960793727968893,
+          "key_entity_recall": 0.65,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 6810.905814170837,
+          "num_questions": 8
+        }
+      },
+      "keda_full": {
+        "evidence_recall": 0.9121881339272643,
+        "evidence_precision": 0.4398982021104783,
+        "token_overlap_f1": 0.13190574036144806,
+        "key_entity_recall": 0.8284584980237154,
+        "hallucination_rate": 0.0,
+        "avg_latency_ms": 7377.333060554836,
+        "num_questions": 23
+      },
+      "keda_full_by_category": {
+        "structural": {
+          "evidence_recall": 0.9242424242424243,
+          "evidence_precision": 0.2861263872293284,
+          "token_overlap_f1": 0.16812267804307277,
+          "key_entity_recall": 0.9545454545454546,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 5796.813229719798,
+          "num_questions": 12
+        },
+        "cross_artifact": {
+          "evidence_recall": 1.0,
+          "evidence_precision": 0.3806411453470277,
+          "token_overlap_f1": 0.10783208020050127,
+          "key_entity_recall": 0.6666666666666666,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 6437.948703765869,
+          "num_questions": 3
+        },
+        "what_if": {
+          "evidence_recall": 0.8611772486772487,
+          "evidence_precision": 0.6927773207184972,
+          "token_overlap_f1": 0.08660795639936605,
+          "key_entity_recall": 0.7,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 10100.381940603256,
+          "num_questions": 8
+        }
+      }
+    }
+  },
+  "picorv32": {
+    "num_questions": 36,
+    "categories": {
+      "structural": 12,
+      "cross_artifact": 9,
+      "temporal": 5,
+      "what_if": 10
+    },
+    "graph_nodes": 525,
+    "graph_edges": 994,
+    "build_time_s": 1.5910923480987549,
+    "metrics": {
+      "llm_only": {
+        "evidence_recall": 0.0,
+        "evidence_precision": 0.0,
+        "token_overlap_f1": 0.14801948908143736,
+        "key_entity_recall": 0.29326432312543427,
+        "hallucination_rate": 0.0,
+        "avg_latency_ms": 1228.1710571712917,
+        "num_questions": 36
+      },
+      "llm_only_by_category": {
+        "structural": {
+          "evidence_recall": 0.0,
+          "evidence_precision": 0.0,
+          "token_overlap_f1": 0.13845454754975264,
+          "key_entity_recall": 0.20783529741863074,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 1212.5487128893535,
+          "num_questions": 12
+        },
+        "cross_artifact": {
+          "evidence_recall": 0.0,
+          "evidence_precision": 0.0,
+          "token_overlap_f1": 0.19107296134363996,
+          "key_entity_recall": 0.25925925925925924,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 1048.491530948215,
+          "num_questions": 9
+        },
+        "temporal": {
+          "evidence_recall": 0.0,
+          "evidence_precision": 0.0,
+          "token_overlap_f1": 0.1530762920426579,
+          "key_entity_recall": 0.15555555555555553,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 1057.0549488067627,
+          "num_questions": 5
+        },
+        "what_if": {
+          "evidence_recall": 0.0,
+          "evidence_precision": 0.0,
+          "token_overlap_f1": 0.11822089240286633,
+          "key_entity_recall": 0.49523809523809526,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 1494.1874980926514,
+          "num_questions": 10
+        }
+      },
+      "kg_only": {
+        "evidence_recall": 0.7904655112679158,
+        "evidence_precision": 0.8638011751281973,
+        "token_overlap_f1": 0.29461636030797966,
+        "key_entity_recall": 0.6446024397413286,
+        "hallucination_rate": 0.0,
+        "avg_latency_ms": 0.8991493119133843,
+        "num_questions": 36
+      },
+      "kg_only_by_category": {
+        "structural": {
+          "evidence_recall": 0.9500000000000001,
+          "evidence_precision": 1.0,
+          "token_overlap_f1": 0.47987956905133,
+          "key_entity_recall": 0.8939043209876543,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 0.5767345428466797,
+          "num_questions": 12
+        },
+        "cross_artifact": {
+          "evidence_recall": 0.4701754385964912,
+          "evidence_precision": 0.5555555555555556,
+          "token_overlap_f1": 0.19345218325610483,
+          "key_entity_recall": 0.37037037037037035,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 0.5430380503336588,
+          "num_questions": 9
+        },
+        "temporal": {
+          "evidence_recall": 1.0,
+          "evidence_precision": 1.0,
+          "token_overlap_f1": 0.28571428571428575,
+          "key_entity_recall": 0.14814814814814814,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 0.6060123443603516,
+          "num_questions": 5
+        },
+        "what_if": {
+          "evidence_recall": 0.7825179458276547,
+          "evidence_precision": 0.90968423046151,
+          "token_overlap_f1": 0.16779930645949345,
+          "key_entity_recall": 0.8404761904761905,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 1.7531156539916992,
+          "num_questions": 10
+        }
+      },
+      "keda_qa": {
+        "evidence_recall": 0.7904655112679158,
+        "evidence_precision": 0.8638011751281973,
+        "token_overlap_f1": 0.19871556497604698,
+        "key_entity_recall": 0.7629728167922613,
+        "hallucination_rate": 0.0,
+        "avg_latency_ms": 8557.399100727505,
+        "num_questions": 36
+      },
+      "keda_qa_by_category": {
+        "structural": {
+          "evidence_recall": 0.9500000000000001,
+          "evidence_precision": 1.0,
+          "token_overlap_f1": 0.3030387840650203,
+          "key_entity_recall": 0.8991477272727272,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 7648.617327213287,
+          "num_questions": 12
+        },
+        "cross_artifact": {
+          "evidence_recall": 0.4701754385964912,
+          "evidence_precision": 0.5555555555555556,
+          "token_overlap_f1": 0.10211004225894064,
+          "key_entity_recall": 0.4444444444444444,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 5243.21116341485,
+          "num_questions": 9
+        },
+        "temporal": {
+          "evidence_recall": 1.0,
+          "evidence_precision": 1.0,
+          "token_overlap_f1": 0.3405349471314659,
+          "key_entity_recall": 0.9925925925925926,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 7838.323163986206,
+          "num_questions": 5
+        },
+        "what_if": {
+          "evidence_recall": 0.7825179458276547,
+          "evidence_precision": 0.90968423046151,
+          "token_overlap_f1": 0.08956298143696531,
+          "key_entity_recall": 0.7714285714285715,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 12990.244340896606,
+          "num_questions": 10
+        }
+      },
+      "vector_rag": {
+        "evidence_recall": 0.4548125702186533,
+        "evidence_precision": 0.43194444444444446,
+        "token_overlap_f1": 0.1633413602432851,
+        "key_entity_recall": 0.6513122294372294,
+        "hallucination_rate": 0.0,
+        "avg_latency_ms": 5515.741613176134,
+        "num_questions": 36
+      },
+      "vector_rag_by_category": {
+        "structural": {
+          "evidence_recall": 0.8069524302857637,
+          "evidence_precision": 0.41250000000000003,
+          "token_overlap_f1": 0.2767608488907262,
+          "key_entity_recall": 0.8056783108866442,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 5139.365116755168,
+          "num_questions": 12
+        },
+        "cross_artifact": {
+          "evidence_recall": 0.49213515952646386,
+          "evidence_precision": 0.37777777777777777,
+          "token_overlap_f1": 0.11600665378708006,
+          "key_entity_recall": 0.5,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 6120.0341913435195,
+          "num_questions": 9
+        },
+        "temporal": {
+          "evidence_recall": 0.15714285714285714,
+          "evidence_precision": 0.11000000000000001,
+          "token_overlap_f1": 0.09798843132176466,
+          "key_entity_recall": 0.2962962962962963,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 3541.671562194824,
+          "num_questions": 5
+        },
+        "what_if": {
+          "evidence_recall": 0.14748926429898943,
+          "evidence_precision": 0.6649999999999999,
+          "token_overlap_f1": 0.10251567413770055,
+          "key_entity_recall": 0.7797619047619048,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 6410.565114021301,
+          "num_questions": 10
+        }
+      },
+      "keda_full": {
+        "evidence_recall": 0.8115957574974277,
+        "evidence_precision": 0.5735482045477638,
+        "token_overlap_f1": 0.16136522138359333,
+        "key_entity_recall": 0.789675024050024,
+        "hallucination_rate": 0.0,
+        "avg_latency_ms": 9152.49843729867,
+        "num_questions": 36
+      },
+      "keda_full_by_category": {
+        "structural": {
+          "evidence_recall": 0.9500000000000001,
+          "evidence_precision": 0.47563780886149304,
+          "token_overlap_f1": 0.23103279569060783,
+          "key_entity_recall": 0.8858901515151515,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 9431.129813194275,
+          "num_questions": 12
+        },
+        "cross_artifact": {
+          "evidence_recall": 0.5331038484356562,
+          "evidence_precision": 0.40326911650441066,
+          "token_overlap_f1": 0.08022005721851096,
+          "key_entity_recall": 0.5555555555555556,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 7766.732109917535,
+          "num_questions": 9
+        },
+        "temporal": {
+          "evidence_recall": 1.0,
+          "evidence_precision": 0.5833333333333334,
+          "token_overlap_f1": 0.2955216850417835,
+          "key_entity_recall": 1.0,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 10118.746852874756,
+          "num_questions": 5
+        },
+        "what_if": {
+          "evidence_recall": 0.8019512633986494,
+          "evidence_precision": 0.8393992942175219,
+          "token_overlap_f1": 0.08371654813465498,
+          "key_entity_recall": 0.7797619047619048,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 9582.206273078918,
+          "num_questions": 10
+        }
+      }
+    }
+  },
+  "verilog_uart": {
+    "num_questions": 22,
+    "categories": {
+      "structural": 9,
+      "cross_artifact": 4,
+      "temporal": 3,
+      "what_if": 6
+    },
+    "graph_nodes": 124,
+    "graph_edges": 173,
+    "build_time_s": 0.5907101631164551,
+    "metrics": {
+      "llm_only": {
+        "evidence_recall": 0.0,
+        "evidence_precision": 0.0,
+        "token_overlap_f1": 0.15809173187752784,
+        "key_entity_recall": 0.35770312946115085,
+        "hallucination_rate": 0.0,
+        "avg_latency_ms": 1757.7231580560858,
+        "num_questions": 22
+      },
+      "llm_only_by_category": {
+        "structural": {
+          "evidence_recall": 0.0,
+          "evidence_precision": 0.0,
+          "token_overlap_f1": 0.15278983834195392,
+          "key_entity_recall": 0.31563451980118645,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 1301.3084729512532,
+          "num_questions": 9
+        },
+        "cross_artifact": {
+          "evidence_recall": 0.0,
+          "evidence_precision": 0.0,
+          "token_overlap_f1": 0.1524157337353546,
+          "key_entity_recall": 0.25,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 1242.3126697540283,
+          "num_questions": 4
+        },
+        "temporal": {
+          "evidence_recall": 0.0,
+          "evidence_precision": 0.0,
+          "token_overlap_f1": 0.15433604336043358,
+          "key_entity_recall": 0.12069716775599128,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 881.9851080576578,
+          "num_questions": 3
+        },
+        "what_if": {
+          "evidence_recall": 0.0,
+          "evidence_precision": 0.0,
+          "token_overlap_f1": 0.17170641520088467,
+          "key_entity_recall": 0.611111111111111,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 3223.82120291392,
+          "num_questions": 6
+        }
+      },
+      "kg_only": {
+        "evidence_recall": 0.8234758297258297,
+        "evidence_precision": 0.8738636363636364,
+        "token_overlap_f1": 0.30432600744517646,
+        "key_entity_recall": 0.7106543374925728,
+        "hallucination_rate": 0.0,
+        "avg_latency_ms": 0.3915700045498935,
+        "num_questions": 22
+      },
+      "kg_only_by_category": {
+        "structural": {
+          "evidence_recall": 0.8958333333333334,
+          "evidence_precision": 1.0,
+          "token_overlap_f1": 0.393600900399146,
+          "key_entity_recall": 0.8958333333333334,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 0.2967781490749783,
+          "num_questions": 9
+        },
+        "cross_artifact": {
+          "evidence_recall": 0.5,
+          "evidence_precision": 0.5,
+          "token_overlap_f1": 0.19287758346581876,
+          "key_entity_recall": 0.41666666666666663,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 0.20426511764526367,
+          "num_questions": 4
+        },
+        "temporal": {
+          "evidence_recall": 1.0,
+          "evidence_precision": 1.0,
+          "token_overlap_f1": 0.3686756523965826,
+          "key_entity_recall": 0.3017429193899782,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 0.29468536376953125,
+          "num_questions": 3
+        },
+        "what_if": {
+          "evidence_recall": 0.8423280423280423,
+          "evidence_precision": 0.8708333333333332,
+          "token_overlap_f1": 0.21253779485809077,
+          "key_entity_recall": 0.8333333333333334,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 0.7070700327555338,
+          "num_questions": 6
+        }
+      },
+      "keda_qa": {
+        "evidence_recall": 0.8234758297258297,
+        "evidence_precision": 0.8738636363636364,
+        "token_overlap_f1": 0.19907203217543792,
+        "key_entity_recall": 0.7755681818181818,
+        "hallucination_rate": 0.0,
+        "avg_latency_ms": 5251.438758590005,
+        "num_questions": 22
+      },
+      "keda_qa_by_category": {
+        "structural": {
+          "evidence_recall": 0.8958333333333334,
+          "evidence_precision": 1.0,
+          "token_overlap_f1": 0.24529585942785367,
+          "key_entity_recall": 0.8587962962962963,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 4551.432847976685,
+          "num_questions": 9
+        },
+        "cross_artifact": {
+          "evidence_recall": 0.5,
+          "evidence_precision": 0.5,
+          "token_overlap_f1": 0.09277943152182502,
+          "key_entity_recall": 0.5,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 3155.2971601486206,
+          "num_questions": 4
+        },
+        "temporal": {
+          "evidence_recall": 1.0,
+          "evidence_precision": 1.0,
+          "token_overlap_f1": 0.38715150940454973,
+          "key_entity_recall": 1.0,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 5641.622702280681,
+          "num_questions": 3
+        },
+        "what_if": {
+          "evidence_recall": 0.8423280423280423,
+          "evidence_precision": 0.8708333333333332,
+          "token_overlap_f1": 0.1065582864513337,
+          "key_entity_recall": 0.7222222222222222,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 7503.783384958903,
+          "num_questions": 6
+        }
+      },
+      "vector_rag": {
+        "evidence_recall": 0.6134969702015156,
+        "evidence_precision": 0.36818181818181817,
+        "token_overlap_f1": 0.18501070057906535,
+        "key_entity_recall": 0.7113609355587965,
+        "hallucination_rate": 0.0,
+        "avg_latency_ms": 5188.848582181064,
+        "num_questions": 22
+      },
+      "vector_rag_by_category": {
+        "structural": {
+          "evidence_recall": 0.874621212121212,
+          "evidence_precision": 0.25,
+          "token_overlap_f1": 0.27325005547429304,
+          "key_entity_recall": 0.9139730639730641,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 4385.89342435201,
+          "num_questions": 9
+        },
+        "cross_artifact": {
+          "evidence_recall": 0.676791958041958,
+          "evidence_precision": 0.3625,
+          "token_overlap_f1": 0.14200382722799346,
+          "key_entity_recall": 0.7083333333333334,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 4437.101066112518,
+          "num_questions": 4
+        },
+        "temporal": {
+          "evidence_recall": 0.28690476190476194,
+          "evidence_precision": 0.09999999999999999,
+          "token_overlap_f1": 0.12392523101194501,
+          "key_entity_recall": 0.14139433551198258,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 2803.995132446289,
+          "num_questions": 3
+        },
+        "what_if": {
+          "evidence_recall": 0.3429100529100529,
+          "evidence_precision": 0.6833333333333332,
+          "token_overlap_f1": 0.11186565192049851,
+          "key_entity_recall": 0.6944444444444445,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 8086.8730545043945,
+          "num_questions": 6
+        }
+      },
+      "keda_full": {
+        "evidence_recall": 0.853856005106005,
+        "evidence_precision": 0.4471188630549831,
+        "token_overlap_f1": 0.14847065015488378,
+        "key_entity_recall": 0.8323863636363636,
+        "hallucination_rate": 0.0,
+        "avg_latency_ms": 7088.640364733609,
+        "num_questions": 22
+      },
+      "keda_full_by_category": {
+        "structural": {
+          "evidence_recall": 0.8958333333333334,
+          "evidence_precision": 0.30343741798850155,
+          "token_overlap_f1": 0.16506371696829591,
+          "key_entity_recall": 0.9236111111111112,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 5895.891163084242,
+          "num_questions": 9
+        },
+        "cross_artifact": {
+          "evidence_recall": 0.6153846153846154,
+          "evidence_precision": 0.39206349206349206,
+          "token_overlap_f1": 0.0963880860135703,
+          "key_entity_recall": 0.6666666666666666,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 7156.617522239685,
+          "num_questions": 4
+        },
+        "temporal": {
+          "evidence_recall": 1.0,
+          "evidence_precision": 0.39651416122004357,
+          "token_overlap_f1": 0.28319297037245755,
+          "key_entity_recall": 1.0,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 7425.991773605347,
+          "num_questions": 3
+        },
+        "what_if": {
+          "evidence_recall": 0.8767989417989418,
+          "evidence_precision": 0.7246469622331692,
+          "token_overlap_f1": 0.09094159925352092,
+          "key_entity_recall": 0.7222222222222222,
+          "hallucination_rate": 0.0,
+          "avg_latency_ms": 8663.77035776774,
+          "num_questions": 6
+        }
+      }
+    }
+  }
+}
