@@ -6,7 +6,7 @@
 
 ## 1. Research Problem Statement
 
-Semiconductor design produces a heterogeneous web of tightly coupled artifacts: RTL source code (Verilog/SystemVerilog), module hierarchies, timing constraints (SDC), clock-domain-crossing (CDC) reports, formal assertions (SVA), functional verification tests, specification/requirements documents, synthesis outputs, and version-control history (Git commits and pull requests). These artifacts are semantically interdependent—a change to an RTL module may invalidate timing constraints, require re-verification of assertions, affect downstream clock domains, and violate specification requirements—yet existing EDA tools and emerging LLM-based EDA assistants treat them largely in isolation.
+Semiconductor design produces a heterogeneous web of tightly coupled artifacts: RTL source code (Verilog/SystemVerilog), module hierarchies, timing constraints (SDC), clock-domain-crossing (CDC) reports, formal assertions (SVA), functional verification tests, specification/requirements documents, synthesis outputs, and version-control history (Git commits and pull requests). These artifacts are semantically interdependent - a change to an RTL module may invalidate timing constraints, require re-verification of assertions, affect downstream clock domains, and violate specification requirements - yet existing EDA tools and emerging LLM-based EDA assistants treat them largely in isolation.
 
 **Problem:** There is no unified, queryable representation that captures cross-artifact semantic relationships in a hardware design, and consequently no systematic method for reasoning about the transitive impact of design changes across artifact boundaries. Current approaches to change-impact analysis, design-risk assessment, and engineering question answering in EDA are limited to single-artifact analysis (e.g., RTL dependency graphs, constraint checking, or code-level version diffs) and fail to propagate reasoning across the full artifact graph.
 
@@ -22,7 +22,7 @@ Semiconductor design produces a heterogeneous web of tightly coupled artifacts: 
 
 **RQ3 (Risk Propagation):** Can multi-hop graph traversal identify indirect downstream risks (e.g., a module change affecting a distant timing path through intermediate clock and constraint relationships) that file-level and lexical approaches systematically miss?
 
-**RQ4 (Ablation — Artifact Contribution):** Which artifact categories (constraints, requirements, verification, Git history) contribute most to cross-artifact reasoning accuracy, and at what graph depth does impact propagation saturate?
+**RQ4 (Ablation  -  Artifact Contribution):** Which artifact categories (constraints, requirements, verification, Git history) contribute most to cross-artifact reasoning accuracy, and at what graph depth does impact propagation saturate?
 
 **RQ5 (Scalability):** Does the approach scale to medium-to-large open-source SoC designs (100K+ lines of RTL) without prohibitive graph construction or query costs?
 
@@ -56,7 +56,7 @@ Semiconductor design produces a heterogeneous web of tightly coupled artifacts: 
 
 3. **Cross-artifact change-impact analysis** that propagates through multiple artifact types (RTL → constraint → timing path → requirement), which no existing EDA tool or LLM approach provides systematically.
 
-4. **GraphRAG for EDA** — applying structured graph retrieval to augment LLM reasoning specifically for hardware engineering questions, with domain-specific graph schemas rather than generic text graphs.
+4. **GraphRAG for EDA**  -  applying structured graph retrieval to augment LLM reasoning specifically for hardware engineering questions, with domain-specific graph schemas rather than generic text graphs.
 
 5. **Quantitative evaluation** on open-source designs with controlled design changes and ground-truth impact sets, providing the first benchmark for cross-artifact EDA reasoning.
 
@@ -64,7 +64,7 @@ Semiconductor design produces a heterogeneous web of tightly coupled artifacts: 
 
 - **Risk 1:** The ontology/schema contribution alone is insufficient for a top venue. The paper MUST have strong experimental results showing quantitative improvement.
 - **Risk 2:** Concurrent work in LLMs-for-EDA is advancing rapidly. By submission time, others may have explored graph-augmented EDA reasoning.
-- **Risk 3:** The cross-artifact idea is conceptually natural. The contribution must be in the rigorous implementation, evaluation, and demonstrated utility—not just the idea.
+- **Risk 3:** The cross-artifact idea is conceptually natural. The contribution must be in the rigorous implementation, evaluation, and demonstrated utility - not just the idea.
 
 ---
 
@@ -395,23 +395,23 @@ def parse_sdc(sdc_file):
 ### Recommended open-source repositories (20-50 target):
 
 **Tier 1: Large, well-documented (rich artifact availability)**
-1. OpenTitan (lowRISC) — full SoC, SDC, SVA, tests, docs
-2. Ibex (lowRISC) — RISC-V core, well-documented
-3. PULP Platform cores (CV32E40P, CVA6) — RISC-V, verification suites
-4. Rocket Chip (Chisel→Verilog) — RISC-V SoC generator
-5. OpenPiton — multi-core research processor
-6. NVDLA — deep learning accelerator
+1. OpenTitan (lowRISC)  -  full SoC, SDC, SVA, tests, docs
+2. Ibex (lowRISC)  -  RISC-V core, well-documented
+3. PULP Platform cores (CV32E40P, CVA6)  -  RISC-V, verification suites
+4. Rocket Chip (Chisel→Verilog)  -  RISC-V SoC generator
+5. OpenPiton  -  multi-core research processor
+6. NVDLA  -  deep learning accelerator
 
 **Tier 2: Medium, good RTL structure**
-7. PicoRV32 — compact RISC-V
-8. VexRiscv (SpinalHDL→Verilog) — RISC-V
-9. SERV — minimal RISC-V
-10. DarkRISCV — RISC-V
-11. mor1kx — OpenRISC
-12. OpenSPARC T1/T2 — SPARC (older but large)
-13. Amber — ARM-compatible
-14. ZipCPU — custom CPU
-15. BIRISCV — RISC-V
+7. PicoRV32  -  compact RISC-V
+8. VexRiscv (SpinalHDL→Verilog)  -  RISC-V
+9. SERV  -  minimal RISC-V
+10. DarkRISCV  -  RISC-V
+11. mor1kx  -  OpenRISC
+12. OpenSPARC T1/T2  -  SPARC (older but large)
+13. Amber  -  ARM-compatible
+14. ZipCPU  -  custom CPU
+15. BIRISCV  -  RISC-V
 
 **Tier 3: Peripheral/IP blocks**
 16. UART16550 (OpenCores)
@@ -473,10 +473,10 @@ KEDA-Bench/
    - Input: natural language question + design context
    - Output: answer text + evidence set
    - Categories:
-     - Structural queries ("Which modules instantiate X?") — 1-hop, easy
-     - Dependency queries ("Which modules depend on clock Y?") — 2-hop, medium
-     - Cross-artifact queries ("Which requirements are affected by this change?") — 3+ hops, hard
-     - Risk assessment queries ("Why is module X risky to modify?") — multi-hop, hard
+     - Structural queries ("Which modules instantiate X?")  -  1-hop, easy
+     - Dependency queries ("Which modules depend on clock Y?")  -  2-hop, medium
+     - Cross-artifact queries ("Which requirements are affected by this change?")  -  3+ hops, hard
+     - Risk assessment queries ("Why is module X risky to modify?")  -  multi-hop, hard
 
 3. **Risk Propagation Scenarios (100-200 instances)**
    - Input: a design change + risk metric
@@ -866,7 +866,7 @@ $$r(t) = e^{-t \cdot L} \cdot r(0)$$
 
 where $L$ is the graph Laplacian and $r(0)$ is the initial risk vector (1 for changed nodes, 0 otherwise). This models risk as "heat" diffusing through the graph.
 
-**Recommendation:** Use Model 1 (Weighted BFS) as primary—it is the most interpretable and controllable. Use Model 2 (PPR) as a comparison to show robustness. Model 3 is included for completeness but may be unnecessarily complex.
+**Recommendation:** Use Model 1 (Weighted BFS) as primary - it is the most interpretable and controllable. Use Model 2 (PPR) as a comparison to show robustness. Model 3 is included for completeness but may be unnecessarily complex.
 
 ---
 
@@ -1045,7 +1045,7 @@ Use leave-one-repo-out cross-validation: train on N-1 repos, test on 1, rotate.
 
 **Arguments against GNNs (for this work):**
 1. **Interpretability:** Weighted BFS and PPR produce interpretable risk scores with clear path-based explanations. GNNs are black boxes.
-2. **Training data:** GNNs require labeled training data. Our benchmark may have 200-500 labeled changes—sufficient for evaluation but marginal for training a GNN.
+2. **Training data:** GNNs require labeled training data. Our benchmark may have 200-500 labeled changes - sufficient for evaluation but marginal for training a GNN.
 3. **Generalization:** GNNs trained on one design's graph may not generalize to unseen designs with different schemas. Simple graph algorithms are graph-agnostic.
 4. **Engineering complexity:** GNN implementation adds significant engineering overhead (node feature engineering, GNN architecture selection, training pipeline) without guaranteed benefit.
 5. **Baselines first:** The paper's contribution is the KG and cross-artifact reasoning framework. Adding a GNN is an orthogonal contribution that could dilute the message.
@@ -1393,12 +1393,12 @@ def tests_to_rerun(G, module_name, max_hops=3):
 | Reviewer Concern | Risk Level | Mitigation |
 |-----------------|------------|-----------|
 | **"This is just a knowledge graph with no novel algorithm"** | HIGH | Emphasize: (1) the cross-artifact ontology is novel for EDA, (2) the benchmark is a contribution, (3) the experimental comparison demonstrates concrete utility. Position the KG as an enabler, not the sole contribution. |
-| **"The ontology is hand-designed — why not learn the schema?"** | MEDIUM | Argue that EDA has well-defined artifact types making a hand-designed schema appropriate and more interpretable. Discuss learned schemas as future work. |
+| **"The ontology is hand-designed  -  why not learn the schema?"** | MEDIUM | Argue that EDA has well-defined artifact types making a hand-designed schema appropriate and more interpretable. Discuss learned schemas as future work. |
 | **"Synthetic requirements/timing are not realistic"** | HIGH | Be transparent about what is synthetic. Use OpenTitan's real constraints/assertions as the primary evaluation point. Show results separately on real vs. synthetic artifacts. |
 | **"What does this do that a synthesis tool's design hierarchy doesn't already do?"** | HIGH | Key differentiator: synthesis tools build module graphs but do NOT connect to constraints, requirements, verification, or Git history. Show specific multi-artifact queries that no single tool can answer. |
 | **"Why not use GNNs?"** | MEDIUM | Include GNN as a baseline. Show that simpler methods are competitive and more interpretable. Argue that the contribution is the framework, not a specific GNN architecture. |
 | **"Scale is too small"** | MEDIUM | Include OpenTitan (~200K LOC). Show scalability analysis. Argue that the approach is evaluated on the largest available open-source SoC. |
-| **"The LLM is doing all the work — the KG adds nothing"** | HIGH | Ablation A7 (no KG) directly tests this. The experiment MUST show that KG + LLM > LLM-only, especially on multi-hop queries. If it doesn't, the paper fails. |
+| **"The LLM is doing all the work  -  the KG adds nothing"** | HIGH | Ablation A7 (no KG) directly tests this. The experiment MUST show that KG + LLM > LLM-only, especially on multi-hop queries. If it doesn't, the paper fails. |
 | **"No user study or industrial validation"** | MEDIUM | Acknowledge as limitation. Propose as future work. Argue that the automated benchmark provides reproducible evaluation. If possible, include a small expert survey (3-5 hardware engineers). |
 | **"Concurrent work in LLM-for-EDA will subsume this"** | MEDIUM | Position clearly: this is about *structured cross-artifact reasoning*, not about using LLMs for RTL generation or bug detection. The KG is the differentiator. |
 
@@ -1433,7 +1433,7 @@ def tests_to_rerun(G, module_name, max_hops=3):
 
 ## 26. Draft Abstract (198 words)
 
-> Semiconductor design produces interconnected artifacts—RTL source code, timing constraints, clock-domain structures, assertions, verification tests, specification requirements, and version-control history—that are semantically coupled but analyzed independently by existing EDA tools. Engineering questions frequently require reasoning across multiple artifact types: determining which tests, constraints, and requirements are affected when a module changes, or identifying indirect timing risks introduced by a pull request. We present KEDA, a framework that constructs a unified, multi-artifact knowledge graph from open-source hardware designs and uses graph-grounded retrieval to augment LLM reasoning for cross-artifact EDA tasks. Our ontology captures 18 node types and 22 relation types spanning RTL structure, timing constraints, verification, requirements, and Git history. We evaluate KEDA on KEDA-Bench, a benchmark of controlled design changes and engineering questions across 25 open-source Verilog/SystemVerilog projects. In change-impact analysis, KEDA improves recall of cross-artifact impacts by [X]% over LLM-only and [Y]% over vector retrieval baselines. For engineering question answering, graph-grounded retrieval reduces hallucination by [Z]% compared to standard RAG. We further demonstrate that weighted graph-based risk propagation identifies indirect downstream impacts that file-level and lexical approaches systematically miss. Code and benchmark are publicly available.
+> Semiconductor design produces interconnected artifacts - RTL source code, timing constraints, clock-domain structures, assertions, verification tests, specification requirements, and version-control history - that are semantically coupled but analyzed independently by existing EDA tools. Engineering questions frequently require reasoning across multiple artifact types: determining which tests, constraints, and requirements are affected when a module changes, or identifying indirect timing risks introduced by a pull request. We present KEDA, a framework that constructs a unified, multi-artifact knowledge graph from open-source hardware designs and uses graph-grounded retrieval to augment LLM reasoning for cross-artifact EDA tasks. Our ontology captures 18 node types and 22 relation types spanning RTL structure, timing constraints, verification, requirements, and Git history. We evaluate KEDA on KEDA-Bench, a benchmark of controlled design changes and engineering questions across 25 open-source Verilog/SystemVerilog projects. In change-impact analysis, KEDA improves recall of cross-artifact impacts by [X]% over LLM-only and [Y]% over vector retrieval baselines. For engineering question answering, graph-grounded retrieval reduces hallucination by [Z]% compared to standard RAG. We further demonstrate that weighted graph-based risk propagation identifies indirect downstream impacts that file-level and lexical approaches systematically miss. Code and benchmark are publicly available.
 
 ---
 
@@ -1633,10 +1633,10 @@ def tests_to_rerun(G, module_name, max_hops=3):
 
 #### LLMs for EDA
 
-- **RTL generation:** ChipGPT, RTLCoder, VeriGen, AutoChip, RTLLM — generate Verilog from specifications.
+- **RTL generation:** ChipGPT, RTLCoder, VeriGen, AutoChip, RTLLM  -  generate Verilog from specifications.
 - **Verification:** LLMs for assertion generation, test generation, property checking.
 - **Bug detection:** LLM-based RTL bug detection and repair.
-- **EDA tool scripting:** ChatEDA, EDA Copilot — natural language interfaces to EDA tools.
+- **EDA tool scripting:** ChatEDA, EDA Copilot  -  natural language interfaces to EDA tools.
 - **Specification understanding:** LLMs parsing datasheets, generating design intent.
 
 **Gap KEDA fills:** None of these use a structured cross-artifact KG for grounded reasoning. They operate on raw text/code without cross-artifact structure.
@@ -1693,7 +1693,7 @@ def tests_to_rerun(G, module_name, max_hops=3):
 3. **Two experiments only:**
    - **Experiment A: Change-Impact Analysis** (primary, 150-200 changes)
    - **Experiment C: Risk Propagation** (secondary, 50-100 scenarios, showing multi-hop advantage)
-   - Drop Experiment B (QA) — it requires a large question dataset and LLM-as-judge evaluation, which is expensive and introduces noise
+   - Drop Experiment B (QA)  -  it requires a large question dataset and LLM-as-judge evaluation, which is expensive and introduces noise
 
 4. **Simpler baselines (5):**
    - Lexical search
@@ -1702,7 +1702,7 @@ def tests_to_rerun(G, module_name, max_hops=3):
    - LLM-only
    - KEDA (full KG traversal)
 
-5. **Graph algorithms only — no LLM in the loop for the primary method:**
+5. **Graph algorithms only  -  no LLM in the loop for the primary method:**
    - The primary KEDA method is weighted graph traversal
    - LLM is used only as a baseline and possibly for requirement linking during construction
    - This avoids LLM cost, variability, and evaluation complexity
@@ -1738,7 +1738,7 @@ def tests_to_rerun(G, module_name, max_hops=3):
 - Ground truth computation: ~500-800 LOC
 - Baselines: ~500-1,000 LOC
 - Evaluation: ~500 LOC
-- **Total: ~4,000-6,000 LOC** — very feasible
+- **Total: ~4,000-6,000 LOC**  -  very feasible
 
 #### Publication target: **ICCAD 2027 or DAC 2027** (depending on completion timeline)
 
