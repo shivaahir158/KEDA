@@ -2,6 +2,8 @@
 
 A research framework that builds unified knowledge graphs from hardware design artifacts (RTL, constraints, assertions, Git history) and uses them for change-impact analysis and engineering question answering.
 
+# Author: Shiva Ahir, PhD Candidate, Stony Brook University
+
 ## Problem
 
 Semiconductor designs produce tightly coupled artifacts: RTL source code, timing constraints (SDC), formal assertions (SVA), testbenches, and version control history. A change to one artifact can invalidate others across multiple categories. Existing tools treat these artifacts in isolation.
